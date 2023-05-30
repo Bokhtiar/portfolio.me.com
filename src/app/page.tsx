@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { PrimaryButton } from "../components/button/index";
 import { Do } from "../components/do/index";
+import {Work} from '../components/work/index';
+import { PrimaryButton } from "../components/button/index";
 
 export default function Home() {
   return (
@@ -277,6 +278,15 @@ export default function Home() {
             />
           </div>
 
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/laravel.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
@@ -288,7 +298,6 @@ export default function Home() {
             />
           </div>
 
-
           <div className="bg-primary m-1 px-12 s ">
             <Image
               src="/images/laravel.png"
@@ -298,29 +307,6 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-
-
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-
-
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
@@ -391,25 +377,6 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
@@ -449,8 +416,53 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/laravel.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
 
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/laravel.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
 
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/laravel.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* work */}
+      <section className="my-32 container">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+          My Work
+        </h4>
+        <h1 className=" font-bold text-4xl text-white">Visit My Best Work</h1>
+        <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
         </div>
       </section>
     </section>
