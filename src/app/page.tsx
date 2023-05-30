@@ -114,6 +114,25 @@ export default function Home() {
                 </a>
 
               </div>
+
+              {/* about exp and client */}
+              <div className='flex items-center gap-4 md:gap-8 my-12'>
+                {/* experiance */}
+                <p>
+                  <span className='font-semibold text-3xl'>2+</span><br />
+                  <span className=' uppercase text-gray-400 text-[12px]'>year of experiance</span>
+                </p>
+                {/* client */}
+                <p>
+                  <span className='font-semibold text-3xl'>20+</span><br />
+                  <span className=' uppercase text-gray-400 text-[12px]'>Global Client work</span>
+                </p>
+                {/* Award */}
+                <p>
+                  <span className='font-semibold text-3xl'>20+</span><br />
+                  <span className=' uppercase text-gray-400 text-[12px]'>Awards win</span>
+                </p>
+              </div>
             </div>
           </div>
           {/* right side content */}
