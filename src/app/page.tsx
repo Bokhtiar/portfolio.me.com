@@ -147,6 +147,110 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* what i do */}
+      <section className='my-32 container'>
+        <h4 className=' uppercase text-secondary text-[12px] font-semibold'>My services</h4>
+        <h1 className=' font-bold text-4xl text-white'>What I Do</h1>
+        {/* services list */}
+        <div className=' grid grid-cols-1 md:grid-cols-3 my-12 gap-8'>
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+
+
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+
+
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+
+
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+
+
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+
+
+          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
+            {/* logo */}
+            <Image
+                    src="/images/icon/github.png"
+                    width={40}
+                    height={40}
+                    alt="Picture of the author"
+                    className='rounded-full bg-white '
+                  />
+            {/* title */}
+            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
+            {/* description */}
+            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          </div>
+        </div>
+      </section>
     </section>
   )
 }
