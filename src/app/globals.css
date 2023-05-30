@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.s{
+    /* box-shadow: rgba(79, 81, 82, 0.12) 0px 2px 4px 0px, rgba(76, 79, 80, 0.32) 0px 5px 14px 5px;
+    margin: 5px; */
+
+    /* box-shadow: -8px -7px 8px rgba(19, 17, 17, 0.45), 5px 5px 9px rgba(10, 10, 10, 0.616); */
+    box-shadow: -8px -7px 8px rgba(0, 0, 0, 0.45), 5px 5px 5px rgba(8, 8, 8, 0.616);
+
+    
+}
