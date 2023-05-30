@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { PrimaryButton } from '../components/button/index'
+import { Do } from '../components/do/index'
 
 export default function Home() {
   return (
@@ -154,101 +155,33 @@ export default function Home() {
         <h1 className=' font-bold text-4xl text-white'>What I Do</h1>
         {/* services list */}
         <div className=' grid grid-cols-1 md:grid-cols-3 my-12 gap-8'>
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
+          
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
+          </div>
+
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
+          </div>
+
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
+          </div>
+
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
+          </div>
+
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
+          </div>
+
+          <div className=' shadow-md text-white bg-gray-950 px-8 py-4 rounded-md my-[0px]'>
+            <Do logo="/images/icon/github.png" title="Web development" description="Reference site about Lorem Ipsum, giving information on its origins,"></Do>
           </div>
 
 
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
-          </div>
-
-
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
-          </div>
-
-
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
-          </div>
-
-
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
-          </div>
-
-
-          <div className=' shadow-md text-white bg-gray-950 p-10 rounded-md my-[0px]'>
-            {/* logo */}
-            <Image
-                    src="/images/icon/github.png"
-                    width={40}
-                    height={40}
-                    alt="Picture of the author"
-                    className='rounded-full bg-white '
-                  />
-            {/* title */}
-            <h2 className='my-5 text-3xl font-semibold'>Web development</h2>
-            {/* description */}
-            <p className='text-base text-gray-400'>Reference site about Lorem Ipsum, giving information on its origins,</p>
-          </div>
+        
         </div>
       </section>
     </section>
