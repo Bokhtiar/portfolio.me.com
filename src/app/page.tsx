@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Do } from "../components/do/index";
+import { Do } from "@/components/do/index";
 import { Resume } from "@/components/resume";
-import { Work } from "../components/work/index";
-import { PrimaryButton } from "../components/button/index";
-
+import { Work } from "@/components/work/index";
+import { Testimonial } from "@/components/testimonial";
+import { PrimaryButton } from "@/components/button/index";
 
 export default function Home() {
   return (
@@ -514,12 +514,14 @@ export default function Home() {
           Years of experiance
         </h4>
         <h1 className=" font-bold text-4xl text-white">My Resume</h1>
-
+ 
         {/* resume information */}
         <section className=" grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* educaton */}
-          <div>
-            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
+          <div className="mx-4">
+          <h3 className=" text-white text-center mt-12 mb-12 uppercase text-2xl font-bold">Education</h3>
+            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 ">
+            
               <Resume name_of_institute=" Bachelor of Software Engineering" title="B.Sc in Software Engineering Daffodil International
                     University (DIU)" year="Jan 2017 – Dec 2020" result="CGPA - 3.25 out of 4.00"></Resume>
               <Resume name_of_institute=" Higher Secondary School Certificate" title="Higher Secondary at Darunnazt Siddikiea Kamil Madrasha (DSKM)" year="Jan 2015 – Dec 2016" result="GPA - 4.96 out of 5.00"></Resume>
@@ -528,15 +530,34 @@ export default function Home() {
           </div>
 
           {/* job experiance */}
-          <div>
+          <div className="mx-4">
+          <h3 className=" text-white text-center mt-12 mb-12 uppercase text-2xl font-bold">Job Experiance</h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
-              
             <Resume name_of_institute="GrapView" title="GrapView at Software Engineer" year="Oct 2022 - Present" skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"></Resume>
             <Resume name_of_institute="Freshosoft" title="Freshosoft at Junior Software Engineer" year="Dec 2021 - Oct 2022 " skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"></Resume>
             <Resume name_of_institute="Antooba Technologies Ltd" title="Antooba Technologies Ltd at Junior Software Engineer" year="Jan 2021 - Nov 2021 " skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"></Resume>
-            </ol>
+            </ol> 
           </div>
         </section>
+      </section>
+
+      {/* testimonial */}
+      <section className="my-32 container">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+          Testimonial
+        </h4>
+        <h1 className=" font-bold text-4xl text-white">What Clients Say</h1>
+        
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 my-12">
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+
+        </div>
+       
       </section>
     </section>
   );
