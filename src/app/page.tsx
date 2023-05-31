@@ -4,6 +4,7 @@ import { Resume } from "@/components/resume";
 import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
+import { Card } from "@/components/card";
 
 export default function Home() {
   return (
@@ -510,16 +511,16 @@ export default function Home() {
 
       {/* resume */}
       <section className="my-32 container">
-        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className=" uppercase text-secondary text-center text-[12px] font-semibold">
           Years of experiance
         </h4>
-        <h1 className=" font-bold text-4xl text-white">My Resume</h1>
+        <h1 className=" font-bold text-4xl text-white text-center">My Resume</h1>
  
         {/* resume information */}
         <section className=" grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* educaton */}
           <div className="mx-4">
-          <h3 className=" text-white text-center mt-12 mb-12 uppercase text-2xl font-bold">Education</h3>
+          <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">Education</h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 ">
             
               <Resume name_of_institute=" Bachelor of Software Engineering" title="B.Sc in Software Engineering Daffodil International
@@ -531,7 +532,7 @@ export default function Home() {
 
           {/* job experiance */}
           <div className="mx-4">
-          <h3 className=" text-white text-center mt-12 mb-12 uppercase text-2xl font-bold">Job Experiance</h3>
+          <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">Job Experiance</h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
             <Resume name_of_institute="GrapView" title="GrapView at Software Engineer" year="Oct 2022 - Present" skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"></Resume>
             <Resume name_of_institute="Freshosoft" title="Freshosoft at Junior Software Engineer" year="Dec 2021 - Oct 2022 " skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"></Resume>
@@ -558,6 +559,42 @@ export default function Home() {
 
         </div>
        
+      </section>
+
+      {/* contact us */}
+      <section className="my-32 container">
+      <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+          Contact
+        </h4>
+        <h1 className=" font-bold text-4xl text-white">Contact with me</h1>
+
+        <div className="my-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+              {/* information */}
+              <div className=" col-span-1">
+                <Card  info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216" index="1"></Card>
+                <Card  info="+880 1638-107361" index="2"></Card>
+                <Card  info="bokhtiar.swe@gmail.com" index="3"></Card>
+                <Card  info="Freelancers Available" index="4"></Card>
+              </div>
+              {/* contact form */}
+              <div className="col-span-3 s md:h-[600px] md:my-auto">
+                <form action="" className="mx-32 my-24">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Name" name="" id="" />
+                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Phone" name="" id="" />
+                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Email" name="" id="" />
+                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Subject" name="" id="" />
+                  </div>
+                  <textarea className="bg-primary w-full input-bordered s mt-12  text-secondary" rows={8} cols={40} />
+
+                  <div className="text-center text-white mt-6">
+                  <PrimaryButton name="Submit"  ></PrimaryButton>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
       </section>
     </section>
   );
