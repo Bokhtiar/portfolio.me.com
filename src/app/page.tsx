@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Do } from "../components/do/index";
-import {Work} from '../components/work/index';
+import { Resume } from "@/components/resume";
+import { Work } from "../components/work/index";
 import { PrimaryButton } from "../components/button/index";
+
 
 export default function Home() {
   return (
@@ -455,15 +457,86 @@ export default function Home() {
         </h4>
         <h1 className=" font-bold text-4xl text-white">Visit My Best Work</h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
-        <Work name="Resturant managment system with post" website_link="" image="/images/pos.jpeg" category="Ecomerce"></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
+          <Work
+            name="Resturant managment system with post"
+            website_link=""
+            image="/images/pos.jpeg"
+            category="Ecomerce"
+          ></Work>
         </div>
+      </section>
+
+      {/* resume */}
+      <section className="my-32 container">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+          Years of experiance
+        </h4>
+        <h1 className=" font-bold text-4xl text-white">My Resume</h1>
+
+        {/* resume information */}
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* educaton */}
+          <div>
+            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
+              <Resume name_of_institute=" Bachelor of Software Engineering" title="B.Sc in Software Engineering Daffodil International
+                    University (DIU)" year="Jan 2017 – Dec 2020" result="CGPA - 3.25 out of 4.00"></Resume>
+              <Resume name_of_institute=" Higher Secondary School Certificate" title="Higher Secondary at Darunnazt Siddikiea Kamil Madrasha (DSKM)" year="Jan 2015 – Dec 2016" result="GPA - 4.96 out of 5.00"></Resume>
+              <Resume name_of_institute="Secondary School Certificate" title="Secondary School at Darunnazt Siddikiea Kamil Madrasha (DSKM)" year="Jan 2015 – Dec 2016" result="GPA - 5.00 out of 5.00"></Resume>
+            </ol>
+          </div>
+
+          {/* job experiance */}
+          <div>
+            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
+              
+            <Resume name_of_institute="GrapView" title="GrapView at Software Engineer" year="Oct 2022 - Present" skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"></Resume>
+            <Resume name_of_institute="Freshosoft" title="Freshosoft at Junior Software Engineer" year="Dec 2021 - Oct 2022 " skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"></Resume>
+            <Resume name_of_institute="Antooba Technologies Ltd" title="Antooba Technologies Ltd at Junior Software Engineer" year="Jan 2021 - Nov 2021 " skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"></Resume>
+            </ol>
+          </div>
+        </section>
       </section>
     </section>
   );
