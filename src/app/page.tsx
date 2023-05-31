@@ -5,6 +5,8 @@ import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 import { Card } from "@/components/card";
+import { VscGithub } from "react-icons/vsc";
+import { CgFacebook, CgTwitter, CgInstagram } from "react-icons/cg";
 
 export default function Home() {
   return (
@@ -209,65 +211,62 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My services
         </h4>
-        <h1 className=" font-bold text-4xl text-white">What I Do</h1>
+        <h1 className=" font-bold text-6xl text-white">What I Do</h1>
         {/* services list */}
         <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
-              logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
+              logo="/images/web.png"
+              title="Web Desing"
+              description="Create dependable online Desings that passionately fulfill both your company's and your consumers' needs."
             ></Do>
           </div>
 
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
+              title="Web Development"
+              description="Make trustworthy internet designs that zealously satisfy the requirements of both your business and your customers."
+            ></Do>
+          </div>
+
+
+          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+            <Do
+              logo="/images/api.png"
+              title="API Development"
+              description="Through application programming interfaces, two or more computer applications can communicate.  "
             ></Do>
           </div>
 
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
+              title="SRS"
+              description="We use the most recent tools & practical approaches to make sure your digital solution is ready."
             ></Do>
           </div>
+
 
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
+              title="Live Server"
+              description="cPanel is an online Linux-based graphical interface (GUI) used as a control panel to simplify website and server management."
             ></Do>
           </div>
 
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
-            <Do
-              logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
-            ></Do>
-          </div>
+          
 
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
-            <Do
-              logo="/images/icon/github.png"
-              title="Web development"
-              description="Reference site about Lorem Ipsum, giving information on its origins,"
-            ></Do>
-          </div>
         </div>
       </section>
 
       {/* skill */}
       <section className="my-32 container">
-        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className="text-center uppercase text-secondary text-[12px] font-semibold">
           My skill
         </h4>
-        <h1 className=" font-bold text-4xl text-white">
+        <h1 className=" text-center font-bold text-6xl text-white">
           Visit My Skill & Hire Me
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4 my-12">
@@ -456,7 +455,7 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My Work
         </h4>
-        <h1 className=" font-bold text-4xl text-white">Visit My Best Work</h1>
+        <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
           <Work
             name="Resturant managment system with post"
@@ -514,30 +513,65 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-center text-[12px] font-semibold">
           Years of experiance
         </h4>
-        <h1 className=" font-bold text-4xl text-white text-center">My Resume</h1>
- 
+        <h1 className=" font-bold text-6xl text-white text-center">
+          My Resume
+        </h1>
+
         {/* resume information */}
         <section className=" grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* educaton */}
           <div className="mx-4">
-          <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">Education</h3>
+            <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">
+              Education
+            </h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 ">
-            
-              <Resume name_of_institute=" Bachelor of Software Engineering" title="B.Sc in Software Engineering Daffodil International
-                    University (DIU)" year="Jan 2017 – Dec 2020" result="CGPA - 3.25 out of 4.00"></Resume>
-              <Resume name_of_institute=" Higher Secondary School Certificate" title="Higher Secondary at Darunnazt Siddikiea Kamil Madrasha (DSKM)" year="Jan 2015 – Dec 2016" result="GPA - 4.96 out of 5.00"></Resume>
-              <Resume name_of_institute="Secondary School Certificate" title="Secondary School at Darunnazt Siddikiea Kamil Madrasha (DSKM)" year="Jan 2015 – Dec 2016" result="GPA - 5.00 out of 5.00"></Resume>
+              <Resume
+                name_of_institute=" Bachelor of Software Engineering"
+                title="B.Sc in Software Engineering Daffodil International
+                    University (DIU)"
+                year="Jan 2017 – Dec 2020"
+                result="CGPA - 3.25 out of 4.00"
+              ></Resume>
+              <Resume
+                name_of_institute=" Higher Secondary School Certificate"
+                title="Higher Secondary at Darunnazt Siddikiea Kamil Madrasha (DSKM)"
+                year="Jan 2015 – Dec 2016"
+                result="GPA - 4.96 out of 5.00"
+              ></Resume>
+              <Resume
+                name_of_institute="Secondary School Certificate"
+                title="Secondary School at Darunnazt Siddikiea Kamil Madrasha (DSKM)"
+                year="Jan 2015 – Dec 2016"
+                result="GPA - 5.00 out of 5.00"
+              ></Resume>
             </ol>
           </div>
 
           {/* job experiance */}
           <div className="mx-4">
-          <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">Job Experiance</h3>
+            <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">
+              Job Experiance
+            </h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
-            <Resume name_of_institute="GrapView" title="GrapView at Software Engineer" year="Oct 2022 - Present" skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"></Resume>
-            <Resume name_of_institute="Freshosoft" title="Freshosoft at Junior Software Engineer" year="Dec 2021 - Oct 2022 " skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"></Resume>
-            <Resume name_of_institute="Antooba Technologies Ltd" title="Antooba Technologies Ltd at Junior Software Engineer" year="Jan 2021 - Nov 2021 " skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"></Resume>
-            </ol> 
+              <Resume
+                name_of_institute="GrapView"
+                title="GrapView at Software Engineer"
+                year="Oct 2022 - Present"
+                skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"
+              ></Resume>
+              <Resume
+                name_of_institute="Freshosoft"
+                title="Freshosoft at Junior Software Engineer"
+                year="Dec 2021 - Oct 2022 "
+                skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"
+              ></Resume>
+              <Resume
+                name_of_institute="Antooba Technologies Ltd"
+                title="Antooba Technologies Ltd at Junior Software Engineer"
+                year="Jan 2021 - Nov 2021 "
+                skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"
+              ></Resume>
+            </ol>
           </div>
         </section>
       </section>
@@ -547,54 +581,192 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           Testimonial
         </h4>
-        <h1 className=" font-bold text-4xl text-white">What Clients Say</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 my-12">
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
-          <Testimonial name="Sabbir Rahman" designation="Ceo of sbrit" image="/images/logo.png" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "></Testimonial> 
+        <h1 className=" font-bold text-6xl text-white">What Clients Say</h1>
 
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 my-12">
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
+          <Testimonial
+            name="Sabbir Rahman"
+            designation="Ceo of sbrit"
+            image="/images/logo.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          ></Testimonial>
         </div>
-       
       </section>
 
       {/* contact us */}
       <section className="my-32 container">
-      <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Contact
         </h4>
-        <h1 className=" font-bold text-4xl text-white">Contact with me</h1>
+        <h1 className=" font-bold text-6xl text-white text-center">Contact with me</h1>
 
         <div className="my-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {/* information */}
-              <div className=" col-span-1">
-                <Card  info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216" index="1"></Card>
-                <Card  info="+880 1638-107361" index="2"></Card>
-                <Card  info="bokhtiar.swe@gmail.com" index="3"></Card>
-                <Card  info="Freelancers Available" index="4"></Card>
-              </div>
-              {/* contact form */}
-              <div className="col-span-3 s md:h-[600px] md:my-auto">
-                <form action="" className="mx-32 my-24">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Name" name="" id="" />
-                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Phone" name="" id="" />
-                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Email" name="" id="" />
-                    <input type="text" className="input input-bordered w-full bg-primary s  " placeholder="Enter Your Subject" name="" id="" />
-                  </div>
-                  <textarea className="bg-primary w-full input-bordered s mt-12  text-secondary" rows={8} cols={40} />
-
-                  <div className="text-center text-white mt-6">
-                  <PrimaryButton name="Submit"  ></PrimaryButton>
-                  </div>
-                </form>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* information */}
+            <div className=" col-span-1">
+              <Card
+                info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216"
+                index="1"
+              ></Card>
+              <Card info="+880 1638-107361" index="2"></Card>
+              <Card info="bokhtiar.swe@gmail.com" index="3"></Card>
+              <Card info="Freelancers Available" index="4"></Card>
             </div>
+            {/* contact form */}
+            <div className="col-span-3 s md:h-[600px] md:my-auto">
+              <form action="" className="mx-32 my-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                  <input
+                    type="text"
+                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    placeholder="Enter Your Name"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    type="text"
+                    className="input input-bordered w-full bg-primary s text-secondary  "
+                    placeholder="Enter Your Phone"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    type="text"
+                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    placeholder="Enter Your Email"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    type="text"
+                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    placeholder="Enter Your Subject"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <textarea
+                  className="bg-primary w-full input-bordered s mt-12  text-secondary"
+                  rows={8}
+                  cols={40}
+                />
+
+                <div className="text-center text-white mt-6">
+                  <PrimaryButton name="Submit"></PrimaryButton>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </section>
+
+ 
+      {/* footer us */}
+      <section className=" ">
+        <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
+          <div>
+            <Image
+              src="/images/logo.png"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              className="rounded-full"
+            />
+          </div>
+
+          <div className="grid grid-flow-col gap-4 mt-[-20px]">
+            {/* facebook */}
+            <a className="bg-white rounded" href="">
+              <Image
+                src="/images/icon/fb.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="rounded-full "
+              />
+            </a>
+
+            {/* facebook */}
+            <a className="bg-white rounded" href="">
+              <Image
+                src="/images/icon/insta.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+            </a>
+
+            {/* facebook */}
+            <a className="bg-white rounded" href="">
+              <Image
+                src="/images/icon/twitter.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+            </a>
+
+            {/* facebook */}
+            <a className="bg-white rounded" href="">
+              <Image
+                src="/images/icon/github.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+            </a>
+
+            {/* facebook */}
+            <a className="bg-white rounded" href="">
+              <Image
+                src="/images/icon/linkdin.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+            </a>
+          </div>
+
+          <div className="mt-[-50px]">
+            <p className="text-gray-400">
+              Copyright © 2023 - All right reserved by Me
+            </p>
+          </div>
+        </footer>
       </section>
     </section>
   );
