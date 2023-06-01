@@ -671,9 +671,9 @@ export default function Home() {
         </h1>
 
         <div className="my-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8">
             {/* information */}
-            <div className=" col-span-1">
+            <div className=" md:col-span-1 mx-8 md:mx-0">
               <Card
                 info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216"
                 index="1"
@@ -684,11 +684,11 @@ export default function Home() {
             </div>
             {/* contact form */}
             <div className="col-span-3 s md:h-[600px] md:my-auto">
-              <form action="" className="mx-32 my-24">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <form action="" className="mx-8 md:mx-32 my-24">
+                <div className="grid grid-cols-1 md:grid-cols-2   gap-12">
                   <input
                     type="text"
-                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    className="input input-bordered md:w-full  bg-primary s  text-secondary"
                     placeholder="Enter Your Name"
                     name=""
                     id=""
