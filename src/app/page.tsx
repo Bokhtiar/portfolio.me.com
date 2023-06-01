@@ -7,7 +7,7 @@ import { PrimaryButton } from "@/components/button/index";
 import { Card } from "@/components/card";
 import { VscGithub } from "react-icons/vsc";
 import { CgFacebook, CgTwitter, CgInstagram } from "react-icons/cg";
-
+ 
 export default function Home() {
   return (
     <section className="bg-primary">
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="md:col-span-1">
             <h2>
               <span className="text-3xl font-semibold">Hello, </span>{" "}
-              <span className="text-secondary text-3xl font-semibold">I'm</span>
+              <span className="text-secondary text-3xl font-semibold">I am</span>
             </h2>
             <h1 className="text-6xl font-bold my-2">Bokhtiar Toshar</h1>
             <h2 className="text-3xl font-semibold">Software engineer</h2>
