@@ -95,11 +95,11 @@ export default function Home() {
               <span className="text-3xl font-semibold">Hello, </span>{" "}
               <span className="text-secondary text-3xl font-semibold">I am</span>
             </h2>
-            <h1 className="text-6xl font-bold my-2">Bokhtiar Toshar</h1>
-            <h2 className="text-3xl font-semibold">Software engineer</h2>
+            <h1 className="text-6xl md:text-8xl font-bold my-2">Bokhtiar Toshar</h1>
+            <h2 className="text-6xl font-semibold">Software engineer</h2>
 
             {/* about me */}
-            <p className="my-12 text-gray-400 ">
+            <p className="my-12 text-gray-300 ">
               Hi, I am Bokhtiar Toshar a passionate Software Engineer: Laravel,
               Nodejs, Reactjs, Vuejs, nextjs, Database : MongoDB, MySql. Always
               I want to learn something
@@ -109,7 +109,7 @@ export default function Home() {
               <h2 className="uppercase mb-2">Find ON Me</h2>
               <div className="flex items-center gap-3">
                 {/* facebook */}
-                <a className="bg-white rounded" href="">
+                <a className="bg-white rounded" href="https://www.facebook.com/bokhtiar172/" target="blank">
                   <Image
                     src="/images/icon/fb.png"
                     width={30}
@@ -119,8 +119,8 @@ export default function Home() {
                   />
                 </a>
 
-                {/* facebook */}
-                <a className="bg-white rounded" href="">
+                {/* insta */}
+                <a className="bg-white rounded" href="https://www.instagram.com/bokhtiar_tushar/" target="blank">
                   <Image
                     src="/images/icon/insta.png"
                     width={30}
@@ -130,7 +130,7 @@ export default function Home() {
                   />
                 </a>
 
-                {/* facebook */}
+                {/* facebook
                 <a className="bg-white rounded" href="">
                   <Image
                     src="/images/icon/twitter.png"
@@ -139,10 +139,10 @@ export default function Home() {
                     alt="Picture of the author"
                     className="rounded-full"
                   />
-                </a>
+                </a> */}
 
-                {/* facebook */}
-                <a className="bg-white rounded" href="">
+                {/* github */}
+                <a className="bg-white rounded" href="https://github.com/Bokhtiar" target="blank">
                   <Image
                     src="/images/icon/github.png"
                     width={30}
@@ -153,7 +153,7 @@ export default function Home() {
                 </a>
 
                 {/* facebook */}
-                <a className="bg-white rounded" href="">
+                <a className="bg-white rounded" href="https://www.linkedin.com/in/bokhtiarswe/" target="blank">
                   <Image
                     src="/images/icon/linkdin.png"
                     width={30}
@@ -251,7 +251,7 @@ export default function Home() {
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
-              title="Live Server"
+              title="Deploy Project"
               description="cPanel is an online Linux-based graphical interface (GUI) used as a control panel to simplify website and server management."
             ></Do>
           </div>
