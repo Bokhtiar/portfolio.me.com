@@ -7,7 +7,7 @@ import { PrimaryButton } from "@/components/button/index";
 import { Card } from "@/components/card";
 import { VscGithub } from "react-icons/vsc";
 import { CgFacebook, CgTwitter, CgInstagram } from "react-icons/cg";
- 
+
 export default function Home() {
   return (
     <section className="bg-primary">
@@ -93,9 +93,13 @@ export default function Home() {
           <div className="md:col-span-1">
             <h2>
               <span className="text-3xl font-semibold">Hello, </span>{" "}
-              <span className="text-secondary text-3xl font-semibold">I am</span>
+              <span className="text-secondary text-3xl font-semibold">
+                I am
+              </span>
             </h2>
-            <h1 className="text-6xl md:text-8xl font-bold my-2">Bokhtiar Toshar</h1>
+            <h1 className="text-6xl md:text-8xl font-bold my-2">
+              Bokhtiar Toshar
+            </h1>
             <h2 className="text-6xl font-semibold">Software engineer</h2>
 
             {/* about me */}
@@ -109,7 +113,11 @@ export default function Home() {
               <h2 className="uppercase mb-2">Find ON Me</h2>
               <div className="flex items-center gap-3">
                 {/* facebook */}
-                <a className="bg-white rounded" href="https://www.facebook.com/bokhtiar172/" target="blank">
+                <a
+                  className="bg-white rounded"
+                  href="https://www.facebook.com/bokhtiar172/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/fb.png"
                     width={30}
@@ -120,7 +128,11 @@ export default function Home() {
                 </a>
 
                 {/* insta */}
-                <a className="bg-white rounded" href="https://www.instagram.com/bokhtiar_tushar/" target="blank">
+                <a
+                  className="bg-white rounded"
+                  href="https://www.instagram.com/bokhtiar_tushar/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/insta.png"
                     width={30}
@@ -142,7 +154,11 @@ export default function Home() {
                 </a> */}
 
                 {/* github */}
-                <a className="bg-white rounded" href="https://github.com/Bokhtiar" target="blank">
+                <a
+                  className="bg-white rounded"
+                  href="https://github.com/Bokhtiar"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/github.png"
                     width={30}
@@ -153,7 +169,11 @@ export default function Home() {
                 </a>
 
                 {/* facebook */}
-                <a className="bg-white rounded" href="https://www.linkedin.com/in/bokhtiarswe/" target="blank">
+                <a
+                  className="bg-white rounded"
+                  href="https://www.linkedin.com/in/bokhtiarswe/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/linkdin.png"
                     width={30}
@@ -230,7 +250,6 @@ export default function Home() {
             ></Do>
           </div>
 
-
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/api.png"
@@ -247,7 +266,6 @@ export default function Home() {
             ></Do>
           </div>
 
-
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
@@ -255,9 +273,6 @@ export default function Home() {
               description="cPanel is an online Linux-based graphical interface (GUI) used as a control panel to simplify website and server management."
             ></Do>
           </div>
-
-          
-
         </div>
       </section>
 
@@ -330,7 +345,6 @@ export default function Home() {
             />
           </div>
 
-
           <div className="bg-primary m-1 px-12 s ">
             <Image
               src="/images/ts.png"
@@ -340,7 +354,6 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
@@ -470,8 +483,6 @@ export default function Home() {
             />
           </div>
 
-         
-
           <div className="bg-primary m-1 px-12 s ">
             <Image
               src="/images/dt3.png"
@@ -492,53 +503,46 @@ export default function Home() {
         <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="GrapSchool"
+            description="The goal of Grapschool, an IT training facility"
+            website_link="https://grapschool.com/"
+            image="/images/grapschoo.png"
+            category="Education"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="GrapTown"
+            description="Graptown Boy's Hostel is a student hostel, Operated by GrapGroup"
+            website_link="https://graptown.com/"
+            image="/images/graptwon.png"
+            category="Business"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Asazaoa"
+            description="One Platform for All Transport Services One app,all services at your fingertips."
+            website_link="https://asazaoa.com/"
+            image="/images/asajawa.png"
+            category="Transport"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Restura"
+            description="Make Healthy Life With Fitbitesmeal. Delicious meal the way you want"
+            website_link="https://restura-com.vercel.app/"
+            image="/images/restura.png"
+            category="Business"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Bt-ecommerce"
+            description="E-commerce is the buying and selling of goods and services over the internet."
+            website_link="https://bokhtiar.github.io/bt-ecommerce.com/"
+            image="/images/bt-original.png"
+            category="Ecommerce"
           ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
+
+
         </div>
       </section>
 
@@ -662,7 +666,9 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Contact
         </h4>
-        <h1 className=" font-bold text-6xl text-white text-center">Contact with me</h1>
+        <h1 className=" font-bold text-6xl text-white text-center">
+          Contact with me
+        </h1>
 
         <div className="my-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -724,7 +730,6 @@ export default function Home() {
         </div>
       </section>
 
- 
       {/* footer us */}
       <section className=" ">
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
