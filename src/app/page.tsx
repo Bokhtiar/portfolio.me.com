@@ -272,7 +272,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4 my-12">
           <div className="bg-primary m-1 px-12 s shadow-2xl">
             <Image
-              src="/images/laravel.png"
+              src="/images/html.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -282,7 +282,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/css.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -292,7 +292,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/bootstrap.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -302,7 +302,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/18.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -312,7 +312,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/13.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -322,7 +322,29 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/jquery.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/ts.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+          
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/17.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -332,7 +354,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/nextjs.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -342,7 +364,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/vuejs1.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -352,7 +374,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/nodejs.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -362,7 +384,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/express-js.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -372,7 +394,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/12.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -382,16 +404,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
+              src="/images/3.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -401,7 +414,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/4.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -411,7 +424,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/9.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -420,17 +433,7 @@ export default function Home() {
           </div>
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
+              src="/images/10.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -440,7 +443,38 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/11.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/15.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/16.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+         
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/dt3.png"
               width={60}
               height={60}
               alt="Picture of the author"
