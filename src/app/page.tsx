@@ -622,39 +622,39 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
+            image="/images/me.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
         </div>

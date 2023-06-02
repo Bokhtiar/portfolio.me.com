@@ -12,7 +12,7 @@ export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
           className="mx-auto w-full h-60 rounded-lg"
         />
         <div className="flex items-center justify-between my-3 ">
-          <a href={props.website_link} className="text-gray-400 text-[13px]">
+          <a href={props.website_link} className="text-gray-400 text-[13px]" target="blank">
             Website link
           </a>
           <span className="text-gray-400 text-[13px]">{props.category}</span>
