@@ -5,12 +5,11 @@ import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 import { Card } from "@/components/card";
-import { VscGithub } from "react-icons/vsc";
-import { CgFacebook, CgTwitter, CgInstagram } from "react-icons/cg";
+
 
 export default function Home() {
-  return (
-    <section className="bg-primary">
+  return ( 
+    <section className="bg-primary"> 
       {/* navbar */}
       <div className="navbar bg-primary container text-white py-4">
         <div className="navbar-start">
@@ -93,7 +92,7 @@ export default function Home() {
           <div className="md:col-span-1">
             <h2>
               <span className="text-3xl font-semibold">Hello, </span>{" "}
-              <span className="text-secondary text-3xl font-semibold">I'm</span>
+              <span className="text-secondary text-3xl font-semibold">I m</span>
             </h2>
             <h1 className="text-6xl font-bold my-2">Bokhtiar Toshar</h1>
             <h2 className="text-3xl font-semibold">Software engineer</h2>
@@ -456,7 +455,7 @@ export default function Home() {
           My Work
         </h4>
         <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
-        <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
+        <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           <Work
             name="Resturant managment system with post"
             website_link=""
@@ -583,42 +582,42 @@ export default function Home() {
         </h4>
         <h1 className=" font-bold text-6xl text-white">What Clients Say</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
             name="Sabbir Rahman"
             designation="Ceo of sbrit"
             image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
         </div>
       </section>

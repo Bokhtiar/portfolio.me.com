@@ -3,7 +3,7 @@ import { IDo } from "../../types/do.type";
 
 export const Do: React.FC<IDo> = (props: IDo): JSX.Element => {
   return (
-    <div className="p-8 py-12 text-center">
+    <div className="p-1 py-12 text-center">
       {/* logo */}
       <Image
         src={props.logo}
@@ -13,7 +13,7 @@ export const Do: React.FC<IDo> = (props: IDo): JSX.Element => {
         className="rounded-full bg-white mx-auto border-4 border-red-500 p-1 "
       />
       {/* title */}
-      <h2 className="my-5 text-3xl font-semibold">{props.title}</h2>
+      <h2 className="my-5 md:text-xl xl:text-2xl font-semibold">{props.title}</h2>
       {/* description */}
       <p className="text-base text-gray-400">
         {props.description}
