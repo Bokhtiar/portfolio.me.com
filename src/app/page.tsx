@@ -53,11 +53,11 @@ export default function Home() {
           </div>
           <a className="btn btn-ghost normal-case text-xl">
             <Image
-              src="/images/logo.png"
-              width={50}
-              height={50}
+              src="/images/logo1.png"
+              width={100}
+              height={100}
               alt="Picture of the author"
-              className="rounded-full"
+              className="rounded-full mt-[-8px]"
             />
           </a>
         </div>
@@ -96,10 +96,10 @@ export default function Home() {
                 I am
               </span>
             </h2>
-            <h1 className="text-6xl md:text-8xl font-bold my-2">
+            <h1 className="text-6xl 2xl:text-8xl font-bold my-2">
               Bokhtiar Toshar
             </h1>
-            <h2 className="text-6xl font-semibold">Software engineer</h2>
+            <h2 className="text-3xl 2xl:text-6xl font-semibold">Software engineer</h2>
 
             {/* about me */}
             <p className="my-12 text-gray-300 ">
@@ -215,11 +215,11 @@ export default function Home() {
           {/* right side content */}
           <div className="md:col-span-1">
             <Image
-              src="/images/logo.png"
+              src="/images/me.png"
               width={450}
               height={250}
               alt="Picture of the author"
-              className="rounded-full mx-auto"
+              className=" rounded-xl mx-auto"
             />
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function Home() {
             <Do
               logo="/images/web.png"
               title="Web Desing"
-              description="Create dependable online Desings that passionately fulfill both your companys and your consumers' needs."
+              description="Create dependable online Desings that passionately fulfill both your companys and your consumers needs."
             ></Do>
           </div>
 
@@ -734,9 +734,9 @@ export default function Home() {
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
           <div>
             <Image
-              src="/images/logo.png"
-              width={50}
-              height={50}
+              src="/images/logo1.png"
+              width={150}
+              height={150}
               alt="Picture of the author"
               className="rounded-full"
             />
