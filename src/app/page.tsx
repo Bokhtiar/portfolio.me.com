@@ -57,7 +57,7 @@ export default function Home() {
               width={100}
               height={100}
               alt="Picture of the author"
-              className="rounded-full mt-[-8px]"
+              className="rounded-full md:mt-[-8px]"
             />
           </a>
         </div>
