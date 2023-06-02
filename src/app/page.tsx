@@ -92,13 +92,17 @@ export default function Home() {
           <div className="md:col-span-1">
             <h2>
               <span className="text-3xl font-semibold">Hello, </span>{" "}
-              <span className="text-secondary text-3xl font-semibold">I m</span>
+              <span className="text-secondary text-3xl font-semibold">
+                I am
+              </span>
             </h2>
-            <h1 className="text-6xl font-bold my-2">Bokhtiar Toshar</h1>
-            <h2 className="text-3xl font-semibold">Software engineer</h2>
+            <h1 className="text-6xl md:text-8xl font-bold my-2">
+              Bokhtiar Toshar
+            </h1>
+            <h2 className="text-6xl font-semibold">Software engineer</h2>
 
             {/* about me */}
-            <p className="my-12 text-gray-400 ">
+            <p className="my-12 text-gray-300 ">
               Hi, I am Bokhtiar Toshar a passionate Software Engineer: Laravel,
               Nodejs, Reactjs, Vuejs, nextjs, Database : MongoDB, MySql. Always
               I want to learn something
@@ -108,7 +112,11 @@ export default function Home() {
               <h2 className="uppercase mb-2">Find ON Me</h2>
               <div className="flex items-center gap-3">
                 {/* facebook */}
-                <a className="bg-white rounded" href="">
+                <a
+                  className="bg-white rounded"
+                  href="https://www.facebook.com/bokhtiar172/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/fb.png"
                     width={30}
@@ -118,8 +126,12 @@ export default function Home() {
                   />
                 </a>
 
-                {/* facebook */}
-                <a className="bg-white rounded" href="">
+                {/* insta */}
+                <a
+                  className="bg-white rounded"
+                  href="https://www.instagram.com/bokhtiar_tushar/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/insta.png"
                     width={30}
@@ -129,7 +141,7 @@ export default function Home() {
                   />
                 </a>
 
-                {/* facebook */}
+                {/* facebook
                 <a className="bg-white rounded" href="">
                   <Image
                     src="/images/icon/twitter.png"
@@ -138,10 +150,14 @@ export default function Home() {
                     alt="Picture of the author"
                     className="rounded-full"
                   />
-                </a>
+                </a> */}
 
-                {/* facebook */}
-                <a className="bg-white rounded" href="">
+                {/* github */}
+                <a
+                  className="bg-white rounded"
+                  href="https://github.com/Bokhtiar"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/github.png"
                     width={30}
@@ -152,7 +168,11 @@ export default function Home() {
                 </a>
 
                 {/* facebook */}
-                <a className="bg-white rounded" href="">
+                <a
+                  className="bg-white rounded"
+                  href="https://www.linkedin.com/in/bokhtiarswe/"
+                  target="blank"
+                >
                   <Image
                     src="/images/icon/linkdin.png"
                     width={30}
@@ -217,7 +237,7 @@ export default function Home() {
             <Do
               logo="/images/web.png"
               title="Web Desing"
-              description="Create dependable online Desings that passionately fulfill both your company's and your consumers' needs."
+              description="Create dependable online Desings that passionately fulfill both your companys and your consumers' needs."
             ></Do>
           </div>
 
@@ -228,7 +248,6 @@ export default function Home() {
               description="Make trustworthy internet designs that zealously satisfy the requirements of both your business and your customers."
             ></Do>
           </div>
-
 
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
@@ -246,17 +265,13 @@ export default function Home() {
             ></Do>
           </div>
 
-
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
-              title="Live Server"
+              title="Deploy Project"
               description="cPanel is an online Linux-based graphical interface (GUI) used as a control panel to simplify website and server management."
             ></Do>
           </div>
-
-          
-
         </div>
       </section>
 
@@ -271,7 +286,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4 my-12">
           <div className="bg-primary m-1 px-12 s shadow-2xl">
             <Image
-              src="/images/laravel.png"
+              src="/images/html.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -281,7 +296,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/css.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -291,7 +306,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/bootstrap.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -301,7 +316,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/18.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -311,7 +326,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/13.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -321,7 +336,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/jquery.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -331,7 +346,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/ts.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -341,7 +356,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/17.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -351,7 +366,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/nextjs.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -361,7 +376,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/vuejs1.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -371,7 +386,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/nodejs.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -381,16 +396,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
+              src="/images/express-js.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -400,7 +406,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/12.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -410,16 +416,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
-              width={60}
-              height={60}
-              alt="Picture of the author"
-              className="mx-auto py-5 rounded"
-            />
-          </div>
-          <div className="bg-primary m-1 px-12 s ">
-            <Image
-              src="/images/laravel.png"
+              src="/images/3.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -429,7 +426,7 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/4.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -439,7 +436,55 @@ export default function Home() {
 
           <div className="bg-primary m-1 px-12 s ">
             <Image
-              src="/images/laravel.png"
+              src="/images/9.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/10.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/11.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/15.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/16.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              className="mx-auto py-5 rounded"
+            />
+          </div>
+
+          <div className="bg-primary m-1 px-12 s ">
+            <Image
+              src="/images/dt3.png"
               width={60}
               height={60}
               alt="Picture of the author"
@@ -457,53 +502,46 @@ export default function Home() {
         <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="GrapSchool"
+            description="The goal of Grapschool, an IT training facility"
+            website_link="https://grapschool.com/"
+            image="/images/grapschoo.png"
+            category="Education"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="GrapTown"
+            description="Graptown Boys Hostel is a student hostel, Operated by GrapGroup"
+            website_link="https://graptown.com/"
+            image="/images/graptwon.png"
+            category="Business"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Asazaoa"
+            description="One Platform for All Transport Services One app,all services at your fingertips."
+            website_link="https://asazaoa.com/"
+            image="/images/asajawa.png"
+            category="Transport"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Restura"
+            description="Make Healthy Life With Fitbitesmeal. Delicious meal the way you want"
+            website_link="https://restura-com.vercel.app/"
+            image="/images/restura.png"
+            category="Business"
           ></Work>
+
           <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
+            name="Bt-ecommerce"
+            description="E-commerce is the buying and selling of goods and services over the internet."
+            website_link="https://bokhtiar.github.io/bt-ecommerce.com/"
+            image="/images/bt-original.png"
+            category="Ecommerce"
           ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
-          <Work
-            name="Resturant managment system with post"
-            website_link=""
-            image="/images/pos.jpeg"
-            category="Ecomerce"
-          ></Work>
+
+
         </div>
       </section>
 
@@ -627,12 +665,14 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Contact
         </h4>
-        <h1 className=" font-bold text-6xl text-white text-center">Contact with me</h1>
+        <h1 className=" font-bold text-6xl text-white text-center">
+          Contact with me
+        </h1>
 
         <div className="my-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8">
             {/* information */}
-            <div className=" col-span-1">
+            <div className=" md:col-span-1 mx-8 md:mx-0">
               <Card
                 info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216"
                 index="1"
@@ -643,11 +683,11 @@ export default function Home() {
             </div>
             {/* contact form */}
             <div className="col-span-3 s md:h-[600px] md:my-auto">
-              <form action="" className="mx-32 my-24">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <form action="" className="mx-8 md:mx-32 my-24">
+                <div className="grid grid-cols-1 md:grid-cols-2   gap-12">
                   <input
                     type="text"
-                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    className="input input-bordered md:w-full  bg-primary s  text-secondary"
                     placeholder="Enter Your Name"
                     name=""
                     id=""
@@ -689,7 +729,6 @@ export default function Home() {
         </div>
       </section>
 
- 
       {/* footer us */}
       <section className=" ">
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
