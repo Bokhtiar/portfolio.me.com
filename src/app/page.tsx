@@ -97,10 +97,10 @@ export default function Home() {
                 I am
               </span>
             </h2>
-            <h1 className="text-6xl md:text-8xl font-bold my-2">
+            <h1 className="text-3xl  md:text-7xl font-bold my-2">
               Bokhtiar Toshar
             </h1>
-            <h2 className="text-6xl font-semibold">Software engineer</h2>
+            <h2 className="text-1xl md:text-3xl font-semibold">Software engineer</h2>
 
             {/* about me */}
             <p className="my-12 text-gray-300 ">
