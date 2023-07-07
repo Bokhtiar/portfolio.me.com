@@ -1,10 +1,10 @@
 import Image from "next/image";
+import { Card } from "@/components/card";
 import { Do } from "@/components/do/index";
 import { Resume } from "@/components/resume";
 import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
-import { Card } from "@/components/card";
 
 
 export default function Home() {
@@ -104,7 +104,7 @@ export default function Home() {
             </h2>
 
             {/* about me */}
-            <p className="my-12 text-xl text-justify md:mr-20 text-gray-300 ">
+            <p className="my-12 text-xl text-justify md:mr-20 text-gray-400">
               Bokhtiar Toshar here, Im a passionate software engineer. I use
               Laravel, Node, React, Vue, and Nextjs, with a MongoDB and MySql
               database. I wish to continue learning about programming languages.
@@ -232,7 +232,7 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My services
         </h4>
-        <h1 className=" font-bold text-6xl text-white">What I Do</h1>
+        <h1 className=" font-bold text-3xl text-white md:text-6xl">What I Do</h1>
         {/* services list */}
         <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
           <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
@@ -266,7 +266,7 @@ export default function Home() {
         <h4 className="text-center uppercase text-secondary text-[12px] font-semibold">
           My skill
         </h4>
-        <h1 className=" text-center font-bold text-6xl text-white">
+        <h1 className=" text-center font-bold text-3xl md:text-6xl text-white">
           Visit My Skill & Hire Me
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4 my-12">
@@ -485,7 +485,7 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My Work
         </h4>
-        <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
+        <h1 className=" font-bold  text-3xl md:text-6xl text-white">Visit My Best Work</h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           <Work
             name="GrapSchool"
@@ -550,7 +550,7 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-center text-[12px] font-semibold">
           Years of experiance
         </h4>
-        <h1 className=" font-bold text-6xl text-white text-center">
+        <h1 className=" font-bold text-3xl md:text-6xl text-white text-center">
           My Resume
         </h1>
 
@@ -600,7 +600,7 @@ export default function Home() {
                 name_of_institute="Freshosoft"
                 title="Freshosoft at Junior Software Engineer"
                 year="Dec 2021 - Oct 2022 "
-                skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Vue.js"
+                skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Reactjs · Nextjs ·  Vue.js"
               ></Resume>
               <Resume
                 name_of_institute="Antooba Technologies Ltd"
@@ -618,43 +618,47 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           Testimonial
         </h4>
-        <h1 className=" font-bold text-6xl text-white">What Clients Say</h1>
+        <h1 className=" font-bold text-3xl md:text-6xl text-white">What Clients Say</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
           <Testimonial
-            name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
+            name="MD. Sabbir Hossain"
+            designation="E-learning Consultant at Commonwealth of Learning"
+            image="/images/c1.jpeg"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
+            name="Hasan Talukder"
+            designation="Ceo of grapGroup"
+            image="/images/c2.jpg"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
+
           <Testimonial
-            name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
+            name="MD. Saidur Rahman"
+            designation="Android Developer at Creatrix Soft Ltd"
+            image="/images/c3.jpg"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
+
+          <Testimonial
+            name="Arjun Kumar"
+            designation="professional designer"
+            image="/images/c4.png"
+            description="Bokhtiar provides excellent service. They produce excellent work and are prompt in their responses to questions and problems. We look forward to working again in the future, "
+          ></Testimonial>
+
           <Testimonial
             name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
+            designation="Ceo of Pencil Design studio"
+            image="/images/c5.png"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
+
           <Testimonial
-            name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
-          ></Testimonial>
-          <Testimonial
-            name="mark cavin"
-            designation="Ceo of sbrit"
-            image="/images/me.png"
+            name="Nazmul Islam Koushik"
+            designation="Ceo of Pencil Design studio"
+            image="/images/c5.jpg"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
         </div>
@@ -665,7 +669,7 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Contact
         </h4>
-        <h1 className=" font-bold text-6xl text-white text-center">
+        <h1 className=" font-bold text-3xl md:text-6xl text-white text-center">
           Contact with me
         </h1>
 
@@ -734,7 +738,7 @@ export default function Home() {
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
           <div>
             <Image
-              src="/images/logo1.png"
+              src="/images/me.png"
               width={150}
               height={150}
               alt="Picture of the author"
@@ -808,4 +812,4 @@ export default function Home() {
       </section>
     </section>
   );
-}
+} 

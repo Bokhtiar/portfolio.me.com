@@ -20,7 +20,7 @@ export const Testimonial: React.FC<ITestimonial> = (
             {props.name}
           </span>
           <br />
-          <span className="text-gray-400">{props.designation}</span>
+          <span className="text-gray-400 text-justify">{props.designation}</span>
         </div>
       </div>
 
