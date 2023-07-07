@@ -5,8 +5,7 @@ import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 import { Card } from "@/components/card";
-import { VscGithub } from "react-icons/vsc";
-import { CgFacebook, CgTwitter, CgInstagram } from "react-icons/cg";
+
 
 export default function Home() {
   return (
@@ -54,11 +53,11 @@ export default function Home() {
           </div>
           <a className="btn btn-ghost normal-case text-xl">
             <Image
-              src="/images/logo.png"
-              width={50}
-              height={50}
+              src="/images/me.png"
+              width={100}
+              height={100}
               alt="Picture of the author"
-              className="rounded-full"
+              className="rounded-full md:mt-[-8px]"
             />
           </a>
         </div>
@@ -97,16 +96,18 @@ export default function Home() {
                 I am
               </span>
             </h2>
-            <h1 className="text-3xl  md:text-7xl font-bold my-2">
+            <h1 className="text-4xl md:text-6xl 2xl:text-8xl font-bold my-2">
               Bokhtiar Toshar
             </h1>
-            <h2 className="text-1xl md:text-3xl font-semibold">Software engineer</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold">
+              Software engineer
+            </h2>
 
             {/* about me */}
-            <p className="my-12 text-gray-300 ">
-              Hi, I am Bokhtiar Toshar a passionate Software Engineer: Laravel,
-              Nodejs, Reactjs, Vuejs, nextjs, Database : MongoDB, MySql. Always
-              I want to learn something
+            <p className="my-12 text-xl text-justify md:mr-20 text-gray-300 ">
+              Bokhtiar Toshar here, Im a passionate software engineer. I use
+              Laravel, Node, React, Vue, and Nextjs, with a MongoDB and MySql
+              database. I wish to continue learning about programming languages.
             </p>
             {/* find on me */}
             <div className="my-12">
@@ -188,7 +189,7 @@ export default function Home() {
               <div className="flex items-center gap-4 md:gap-8 my-12">
                 {/* experiance */}
                 <p>
-                  <span className="font-semibold text-3xl">2+</span>
+                  <span className="font-semibold text-3xl">2.5+</span>
                   <br />
                   <span className=" uppercase text-gray-400 text-[12px]">
                     year of experiance
@@ -196,7 +197,7 @@ export default function Home() {
                 </p>
                 {/* client */}
                 <p>
-                  <span className="font-semibold text-3xl">20+</span>
+                  <span className="font-semibold text-3xl">27+</span>
                   <br />
                   <span className=" uppercase text-gray-400 text-[12px]">
                     Global Client work
@@ -204,7 +205,7 @@ export default function Home() {
                 </p>
                 {/* Award */}
                 <p>
-                  <span className="font-semibold text-3xl">20+</span>
+                  <span className="font-semibold text-3xl">9+</span>
                   <br />
                   <span className=" uppercase text-gray-400 text-[12px]">
                     Awards win
@@ -216,11 +217,11 @@ export default function Home() {
           {/* right side content */}
           <div className="md:col-span-1">
             <Image
-              src="/images/logo.png"
+              src="/images/me.png"
               width={450}
               height={250}
               alt="Picture of the author"
-              className="rounded-full mx-auto"
+              className=" rounded-xl mx-auto"
             />
           </div>
         </div>
@@ -238,7 +239,7 @@ export default function Home() {
             <Do
               logo="/images/web.png"
               title="Web Desing"
-              description="Create dependable online Desings that passionately fulfill both your company's and your consumers' needs."
+              description="Create dependable online Desings that passionately fulfill both your companys and your consumers needs."
             ></Do>
           </div>
 
@@ -255,22 +256,6 @@ export default function Home() {
               logo="/images/api.png"
               title="API Development"
               description="Through application programming interfaces, two or more computer applications can communicate.  "
-            ></Do>
-          </div>
-
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
-            <Do
-              logo="/images/icon/github.png"
-              title="SRS"
-              description="We use the most recent tools & practical approaches to make sure your digital solution is ready."
-            ></Do>
-          </div>
-
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
-            <Do
-              logo="/images/icon/github.png"
-              title="Deploy Project"
-              description="cPanel is an online Linux-based graphical interface (GUI) used as a control panel to simplify website and server management."
             ></Do>
           </div>
         </div>
@@ -501,7 +486,7 @@ export default function Home() {
           My Work
         </h4>
         <h1 className=" font-bold text-6xl text-white">Visit My Best Work</h1>
-        <div className="my-12 grid grid-cols-1 md:grid-cols-4 gap-7">
+        <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           <Work
             name="GrapSchool"
             description="The goal of Grapschool, an IT training facility"
@@ -512,7 +497,7 @@ export default function Home() {
 
           <Work
             name="GrapTown"
-            description="Graptown Boy's Hostel is a student hostel, Operated by GrapGroup"
+            description="Graptown Boys Hostel is a student hostel, Operated by GrapGroup"
             website_link="https://graptown.com/"
             image="/images/graptwon.png"
             category="Business"
@@ -542,7 +527,21 @@ export default function Home() {
             category="Ecommerce"
           ></Work>
 
+          <Work
+            name="vert-2-gris"
+            description="Vert-2-Gris is a humane venture, where, as the founders, East meets West, Bangladesh meets Europe."
+            website_link="https://vert-2-gris.net/"
+            image="/images/ver2.png"
+            category="Ecommerce"
+          ></Work>
 
+          <Work
+            name="Schoolpara"
+            description="Stress Free Studying !! anywhere any time."
+            website_link="https://schoolpara.com/"
+            image="/images/schoolpara.png"
+            category="Education"
+          ></Work>
         </div>
       </section>
 
@@ -621,42 +620,42 @@ export default function Home() {
         </h4>
         <h1 className=" font-bold text-6xl text-white">What Clients Say</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
           <Testimonial
-            name="Sabbir Rahman"
+            name="mark cavin"
             designation="Ceo of sbrit"
-            image="/images/logo.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+            image="/images/me.png"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
           ></Testimonial>
         </div>
       </section>
@@ -735,9 +734,9 @@ export default function Home() {
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">
           <div>
             <Image
-              src="/images/logo.png"
-              width={50}
-              height={50}
+              src="/images/logo1.png"
+              width={150}
+              height={150}
               alt="Picture of the author"
               className="rounded-full"
             />

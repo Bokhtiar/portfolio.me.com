@@ -16,7 +16,7 @@ export const Testimonial: React.FC<ITestimonial> = (
           className="rounded-full"
         />
         <div>
-          <span className=" text-white text-xl font-semibold">
+          <span className=" text-white lg:text-base font-semibold">
             {props.name}
           </span>
           <br />

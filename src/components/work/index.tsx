@@ -3,7 +3,7 @@ import { IWork } from "../../types/work.type";
 export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
   return (
     <div>
-      <div className="  text-white bg-primary px-8 py-8 rounded-md my-[0px]">
+      <div className=" s text-white bg-primary px-8 py-8 rounded-md my-[0px]">
         <Image
           src={props.image}
           width={350}
@@ -24,7 +24,7 @@ export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
           {props.name}
         </a>
         <br />
-        <span>{props.description}</span>
+        <span className=" text-justify">{props.description}</span>
       </div>
     </div>
   );
