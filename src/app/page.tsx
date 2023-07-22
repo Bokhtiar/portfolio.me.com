@@ -34,27 +34,24 @@ export default function Home() {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary text-white rounded-box w-52"
             >
               <li>
-                <a>HOME</a>
+                <a href="#home" className="">
+                  HOME
+                </a>
               </li>
               <li>
-                <a>Services</a>
+                <a href="#service">SERVICES</a>
               </li>
               <li>
-                <a>Skill</a>
-              </li>
-
-              <li>
-                <a>PORTFOLIO</a>
-              </li>
-
-              <li>
-                <a>PORTFOLIO</a>
+                <a href="#skill">SKILL</a>
               </li>
               <li>
-                <a>RESUME</a>
+                <a href="#project">PROJECT</a>
               </li>
               <li>
-                <a>CONTACT</a>
+                <a href="#resume">RESUME</a>
+              </li>
+              <li>
+                <a href="#contact-us">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -103,15 +100,15 @@ export default function Home() {
           {/* left side content */}
           <div className="md:col-span-1">
             <h2>
-              <span className="text-3xl font-semibold">Hello, </span>{" "}
-              <span className="text-secondary text-3xl font-semibold">
+              <span className="text-xl md:text-3xl font-semibold">Hello, </span>{" "}
+              <span className="text-secondary text-xl md:text-3xl font-semibold">
                 I am
               </span>
             </h2>
             <h1 className="text-4xl md:text-6xl 2xl:text-8xl font-bold my-2">
               Bokhtiar Toshar
             </h1>
-            <h2 className="text-2xl md:text-4xl font-semibold">
+            <h2 className="text-xl md:text-4xl font-semibold">
               Software engineer
             </h2>
 
@@ -124,7 +121,7 @@ export default function Home() {
             {/* find on me */}
             <div className="my-12">
               <h2 className="uppercase mb-2">Find ON Me</h2>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 ">
                 {/* facebook */}
                 <a
                   className="bg-white rounded"
@@ -136,13 +133,13 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className="rounded-full"
+                    className=" "
                   />
                 </a>
 
                 {/* insta */}
                 <a
-                  className="bg-white rounded"
+                  className="bg-white rounded "
                   href="https://www.instagram.com/bokhtiar_tushar/"
                   target="blank"
                 >
@@ -151,7 +148,7 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className="rounded-full"
+                    className=""
                   />
                 </a>
 
@@ -177,13 +174,13 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className="rounded-full"
+                    className=""
                   />
                 </a>
 
                 {/* facebook */}
                 <a
-                  className="bg-white rounded"
+                  className=" bg-white rounded"
                   href="https://www.linkedin.com/in/bokhtiarswe/"
                   target="blank"
                 >
@@ -192,7 +189,7 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className="rounded-full"
+                    className=""
                   />
                 </a>
               </div>
@@ -203,7 +200,7 @@ export default function Home() {
                 <p>
                   <span className="font-semibold text-3xl">2.5+</span>
                   <br />
-                  <span className=" uppercase text-gray-400 text-[12px]">
+                  <span className=" uppercase text-gray-400 text-[10px] md:text-[12px]">
                     year of experiance
                   </span>
                 </p>
@@ -211,7 +208,7 @@ export default function Home() {
                 <p>
                   <span className="font-semibold text-3xl">27+</span>
                   <br />
-                  <span className=" uppercase text-gray-400 text-[12px]">
+                  <span className=" uppercase text-gray-400 text-[10px] md:text-[12px]">
                     Global Client work
                   </span>
                 </p>
@@ -219,7 +216,7 @@ export default function Home() {
                 <p>
                   <span className="font-semibold text-3xl">9+</span>
                   <br />
-                  <span className=" uppercase text-gray-400 text-[12px]">
+                  <span className=" uppercase text-gray-400 text-[10px] md:text-[12px]">
                     Awards win
                   </span>
                 </p>
@@ -241,15 +238,15 @@ export default function Home() {
 
       {/* what i do */}
       <section className="my-32 container" id="service">
-        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className=" uppercase text-secondary text-[12px] text-center font-semibold">
           My services
         </h4>
-        <h1 className=" font-bold text-3xl text-white md:text-6xl">
+        <h1 className=" font-bold text-3xl text-white md:text-6xl text-center">
           What I Do
         </h1>
         {/* services list */}
         <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
-          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-3 md:px-8 md:py-4  rounded-md my-[0px]">
             <Do
               logo="/images/web.png"
               title="Web Desing"
@@ -496,10 +493,10 @@ export default function Home() {
 
       {/* work */}
       <section className="my-32 container" id="project">
-        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           My Work
         </h4>
-        <h1 className=" font-bold  text-3xl md:text-6xl text-white">
+        <h1 className=" font-bold  text-3xl md:text-6xl text-white text-center">
           Visit My Best Work
         </h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
@@ -571,13 +568,13 @@ export default function Home() {
         </h1>
 
         {/* resume information */}
-        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-9">
           {/* educaton */}
           <div className="mx-4">
             <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">
               Education
             </h3>
-            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 ">
+            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 pl-2">
               <Resume
                 name_of_institute=" Bachelor of Software Engineering"
                 title="B.Sc in Software Engineering Daffodil International
@@ -605,7 +602,7 @@ export default function Home() {
             <h3 className=" text-white  mt-12 mb-12 uppercase text-2xl font-bold">
               Job Experiance
             </h3>
-            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12">
+            <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12 pl-2">
               <Resume
                 name_of_institute="GrapView"
                 title="GrapView at Software Engineer"
@@ -631,10 +628,10 @@ export default function Home() {
 
       {/* testimonial */}
       <section className="my-32 container">
-        <h4 className=" uppercase text-secondary text-[12px] font-semibold">
+        <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Testimonial
         </h4>
-        <h1 className=" font-bold text-3xl md:text-6xl text-white">
+        <h1 className=" font-bold text-3xl md:text-6xl text-white text-center">
           What Clients Say
         </h1>
 
@@ -735,7 +732,7 @@ export default function Home() {
                 </div>
                 <textarea
                   className="bg-primary w-full input-bordered border rounded border-gray-800 mt-12  text-secondary"
-                  rows={5}
+                  rows={8}
                   cols={40}
                 />
 
@@ -818,7 +815,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-[-50px]">
+          <div className="mt-[-30px] md:mt-[-50px]">
             <p className="text-gray-400">
               Copyright © 2023 - All right reserved by Me
             </p>

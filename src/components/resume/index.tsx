@@ -13,11 +13,11 @@ export const Resume: React.FC<IResume> = (props: IResume): JSX.Element => {
           className="rounded-full p-1"
         />
       </span>
-      <h3 className="font-medium leading-tight text-3xl text-white">
+      <h3 className="font-medium leading-tight text-lg md:text-3xl text-white">
         {props.name_of_institute}
       </h3>
       <p className="text-sm ml-7 mt-6 mb-24">
-        <span className="text-xl text-white">{props.title}</span>
+        <span className="text-sm md:text-xl text-white">{props.title}</span>
         <br />
         <span className="text-sm text-gray">{props.year}</span>
         <br />

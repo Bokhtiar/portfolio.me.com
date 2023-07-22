@@ -9,7 +9,7 @@ export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
           width={350}
           height={550}
           alt="Picture of the author"
-          className="mx-auto w-full h-60 rounded-lg"
+          className="mx-auto w-full h-60 rounded"
         />
         <div className="flex items-center justify-between my-3 ">
           <a
