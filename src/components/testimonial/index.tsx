@@ -5,7 +5,7 @@ export const Testimonial: React.FC<ITestimonial> = (
   props: ITestimonial
 ): JSX.Element => {
   return (
-    <div className="s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+    <div className="border rounded border-gray-800 text-white bg-primary px-8 py-4 my-[0px]">
       {/* rating with coma */}
       <div className="flex items-center gap-4">
         <Image
@@ -20,7 +20,9 @@ export const Testimonial: React.FC<ITestimonial> = (
             {props.name}
           </span>
           <br />
-          <span className="text-gray-400 text-justify">{props.designation}</span>
+          <span className="text-gray-400 text-justify">
+            {props.designation}
+          </span>
         </div>
       </div>
 

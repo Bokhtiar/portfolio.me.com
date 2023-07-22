@@ -6,10 +6,9 @@ import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 
-
 export default function Home() {
   return (
-    <section className="bg-primary">
+    <section className="bg-primary" id="home">
       {/* navbar */}
       <div className="navbar bg-primary container text-white py-4">
         <div className="navbar-start">
@@ -41,6 +40,14 @@ export default function Home() {
                 <a>Services</a>
               </li>
               <li>
+                <a>Skill</a>
+              </li>
+
+              <li>
+                <a>PORTFOLIO</a>
+              </li>
+
+              <li>
                 <a>PORTFOLIO</a>
               </li>
               <li>
@@ -64,19 +71,24 @@ export default function Home() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-sm">
             <li>
-              <a className="">HOME</a>
+              <a href="#home" className="">
+                HOME
+              </a>
             </li>
             <li>
-              <a>SERVICES</a>
+              <a href="#service">SERVICES</a>
             </li>
             <li>
-              <a>PORTFOLIO</a>
+              <a href="#skill">SKILL</a>
             </li>
             <li>
-              <a>RESUME</a>
+              <a href="#project">PROJECT</a>
             </li>
             <li>
-              <a>CONTACT</a>
+              <a href="#resume">RESUME</a>
+            </li>
+            <li>
+              <a href="#contact-us">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -217,7 +229,7 @@ export default function Home() {
           {/* right side content */}
           <div className="md:col-span-1">
             <Image
-              src="/images/me.png"
+              src="/images/bokhtiar2.png"
               width={450}
               height={250}
               alt="Picture of the author"
@@ -228,14 +240,16 @@ export default function Home() {
       </section>
 
       {/* what i do */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="service">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My services
         </h4>
-        <h1 className=" font-bold text-3xl text-white md:text-6xl">What I Do</h1>
+        <h1 className=" font-bold text-3xl text-white md:text-6xl">
+          What I Do
+        </h1>
         {/* services list */}
         <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/web.png"
               title="Web Desing"
@@ -243,7 +257,7 @@ export default function Home() {
             ></Do>
           </div>
 
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/icon/github.png"
               title="Web Development"
@@ -251,7 +265,7 @@ export default function Home() {
             ></Do>
           </div>
 
-          <div className=" s text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
             <Do
               logo="/images/api.png"
               title="API Development"
@@ -262,15 +276,15 @@ export default function Home() {
       </section>
 
       {/* skill */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="skill">
         <h4 className="text-center uppercase text-secondary text-[12px] font-semibold">
           My skill
         </h4>
         <h1 className=" text-center font-bold text-3xl md:text-6xl text-white">
           Visit My Skill & Hire Me
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 my-12">
-          <div className="bg-primary m-1 px-12 s shadow-2xl">
+        <div className="grid grid-cols-2 md:grid-cols-8 gap-4 my-12">
+          <div className="bg-primary m-1 px-12 border rounded border-gray-800 shadow-2xl">
             <Image
               src="/images/html.png"
               width={60}
@@ -280,7 +294,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/css.png"
               width={60}
@@ -290,7 +304,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/bootstrap.png"
               width={60}
@@ -300,7 +314,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/18.png"
               width={60}
@@ -310,7 +324,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/13.png"
               width={60}
@@ -320,7 +334,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/jquery.png"
               width={60}
@@ -330,7 +344,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/ts.png"
               width={60}
@@ -340,7 +354,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/17.png"
               width={60}
@@ -350,7 +364,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/nextjs.png"
               width={60}
@@ -360,7 +374,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/vuejs1.png"
               width={60}
@@ -370,7 +384,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/nodejs.png"
               width={60}
@@ -380,7 +394,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/express-js.png"
               width={60}
@@ -390,7 +404,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/12.png"
               width={60}
@@ -400,7 +414,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/3.png"
               width={60}
@@ -410,7 +424,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/4.png"
               width={60}
@@ -420,7 +434,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/9.png"
               width={60}
@@ -429,7 +443,7 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/10.png"
               width={60}
@@ -439,7 +453,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/11.png"
               width={60}
@@ -449,7 +463,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/15.png"
               width={60}
@@ -458,7 +472,7 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/16.png"
               width={60}
@@ -468,7 +482,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12 s ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
             <Image
               src="/images/dt3.png"
               width={60}
@@ -481,15 +495,17 @@ export default function Home() {
       </section>
 
       {/* work */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="project">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           My Work
         </h4>
-        <h1 className=" font-bold  text-3xl md:text-6xl text-white">Visit My Best Work</h1>
+        <h1 className=" font-bold  text-3xl md:text-6xl text-white">
+          Visit My Best Work
+        </h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           <Work
             name="GrapSchool"
-            description="The goal of Grapschool, an IT training facility"
+            description="The goal of Grapschool, an IT training facility an IT training facility"
             website_link="https://grapschool.com/"
             image="/images/grapschoo.png"
             category="Education"
@@ -546,7 +562,7 @@ export default function Home() {
       </section>
 
       {/* resume */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="resume">
         <h4 className=" uppercase text-secondary text-center text-[12px] font-semibold">
           Years of experiance
         </h4>
@@ -618,7 +634,9 @@ export default function Home() {
         <h4 className=" uppercase text-secondary text-[12px] font-semibold">
           Testimonial
         </h4>
-        <h1 className=" font-bold text-3xl md:text-6xl text-white">What Clients Say</h1>
+        <h1 className=" font-bold text-3xl md:text-6xl text-white">
+          What Clients Say
+        </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
           <Testimonial
@@ -665,7 +683,7 @@ export default function Home() {
       </section>
 
       {/* contact us */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="contact-us">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
           Contact
         </h4>
@@ -673,58 +691,55 @@ export default function Home() {
           Contact with me
         </h1>
 
-        <div className="my-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8">
+        <div className="my-12 ">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8  md:my-auto">
             {/* information */}
             <div className=" md:col-span-1 mx-8 md:mx-0">
-              <Card
-                info="Daffodil Smart City (DSC), Birulia, Savar, Dhaka-1216"
-                index="1"
-              ></Card>
+              <Card info="(DIU), Birulia, Savar, Dhaka-1216" index="1"></Card>
               <Card info="+880 1638-107361" index="2"></Card>
               <Card info="bokhtiar.swe@gmail.com" index="3"></Card>
               <Card info="Freelancers Available" index="4"></Card>
             </div>
             {/* contact form */}
-            <div className="col-span-3 s md:h-[600px] md:my-auto">
+            <div className="col-span-3 border rounded border-gray-800 md:h-[592px] ">
               <form action="" className="mx-8 md:mx-32 my-24">
                 <div className="grid grid-cols-1 md:grid-cols-2   gap-12">
                   <input
                     type="text"
-                    className="input input-bordered md:w-full  bg-primary s  text-secondary"
+                    className="input input-bordered md:w-full  bg-primary border rounded border-gray-800  text-secondary"
                     placeholder="Enter Your Name"
                     name=""
                     id=""
                   />
                   <input
                     type="text"
-                    className="input input-bordered w-full bg-primary s text-secondary  "
+                    className="input input-bordered w-full bg-primary border rounded border-gray-800 text-secondary  "
                     placeholder="Enter Your Phone"
                     name=""
                     id=""
                   />
                   <input
                     type="text"
-                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    className="input input-bordered w-full bg-primary border rounded border-gray-800  text-secondary"
                     placeholder="Enter Your Email"
                     name=""
                     id=""
                   />
                   <input
                     type="text"
-                    className="input input-bordered w-full bg-primary s  text-secondary"
+                    className="input input-bordered w-full bg-primary border rounded border-gray-800  text-secondary"
                     placeholder="Enter Your Subject"
                     name=""
                     id=""
                   />
                 </div>
                 <textarea
-                  className="bg-primary w-full input-bordered s mt-12  text-secondary"
-                  rows={8}
+                  className="bg-primary w-full input-bordered border rounded border-gray-800 mt-12  text-secondary"
+                  rows={5}
                   cols={40}
                 />
 
-                <div className="text-center text-white mt-6">
+                <div className="text-center text-white mt-8">
                   <PrimaryButton name="Submit"></PrimaryButton>
                 </div>
               </form>
@@ -812,4 +827,4 @@ export default function Home() {
       </section>
     </section>
   );
-} 
+}
