@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card } from "@/components/card";
 import { Do } from "@/components/do/index";
@@ -7,10 +8,14 @@ import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 
 export default function Home() {
+
+
+
+
   return (
     <section className="bg-primary" id="home">
       {/* navbar */}
-      <div className="navbar bg-primary container text-white py-4 sticky top-0 z-50">
+      <div className="navbar bg-primary container text-white py-5 sticky top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -93,20 +98,9 @@ export default function Home() {
           <PrimaryButton name="DOWNLOAD CV"></PrimaryButton>
         </div>
       </div>
-
       {/* banner area */}
       <section className="my-32 container">
         <div className="grid grid-cols-1 md:grid-cols-2 text-white">
-          <div className="md:col-span-1">
-            <Image
-              src="/images/bokhtiar2.png"
-              width={450}
-              height={250}
-              alt="Picture of the author"
-              className=" rounded-xl mx-auto"
-            />
-          </div>
-          
           {/* left side content */}
           <div className="md:col-span-1">
             <h2>
@@ -234,9 +228,17 @@ export default function Home() {
             </div>
           </div>
           {/* right side content */}
+          <div className="md:col-span-1">
+            <Image
+              src="/images/bokhtiar2.1.png"
+              width={450}
+              height={250}
+              alt="Picture of the author"
+              className=" rounded-xl mx-auto"
+            />
+          </div>
         </div>
       </section>
-
       {/* what i do */}
       <section className="my-32 container" id="service">
         <h4 className=" uppercase text-secondary text-[12px] text-center font-semibold">
@@ -247,7 +249,7 @@ export default function Home() {
         </h1>
         {/* services list */}
         <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
-          <div className=" border border-gray-800  text-white bg-primary px-3 md:px-8 md:py-4  rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-3 md:px-8 md:py-4  rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90 ">
             <Do
               logo="/images/web.png"
               title="Web Desing"
@@ -255,7 +257,7 @@ export default function Home() {
             ></Do>
           </div>
 
-          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Do
               logo="/images/icon/github.png"
               title="Web Development"
@@ -263,7 +265,7 @@ export default function Home() {
             ></Do>
           </div>
 
-          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px]">
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Do
               logo="/images/api.png"
               title="API Development"
@@ -282,7 +284,7 @@ export default function Home() {
           Visit My Skill & Hire Me
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-8 gap-4 my-12">
-          <div className="bg-primary m-1 px-12 border rounded border-gray-800 shadow-2xl">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/html.png"
               width={60}
@@ -292,7 +294,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/css.png"
               width={60}
@@ -302,7 +304,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/bootstrap.png"
               width={60}
@@ -312,7 +314,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/18.png"
               width={60}
@@ -322,7 +324,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/13.png"
               width={60}
@@ -332,7 +334,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/jquery.png"
               width={60}
@@ -342,7 +344,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/ts.png"
               width={60}
@@ -352,7 +354,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/17.png"
               width={60}
@@ -362,7 +364,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/nextjs.png"
               width={60}
@@ -372,7 +374,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/vuejs1.png"
               width={60}
@@ -382,7 +384,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/nodejs.png"
               width={60}
@@ -392,7 +394,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/express-js.png"
               width={60}
@@ -402,7 +404,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/12.png"
               width={60}
@@ -412,7 +414,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/3.png"
               width={60}
@@ -422,7 +424,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/4.png"
               width={60}
@@ -432,7 +434,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/9.png"
               width={60}
@@ -441,7 +443,7 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/10.png"
               width={60}
@@ -451,7 +453,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/11.png"
               width={60}
@@ -461,7 +463,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/15.png"
               width={60}
@@ -470,7 +472,7 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/16.png"
               width={60}
@@ -480,7 +482,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-primary m-1 px-12  border rounded border-gray-800 ">
+          <div className="bg-primary m-1 px-12  border rounded border-gray-800 hover:bg-secondary hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Image
               src="/images/dt3.png"
               width={60}
@@ -491,7 +493,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* work */}
       <section className="my-32 container" id="project">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
@@ -500,7 +501,7 @@ export default function Home() {
         <h1 className=" font-bold  text-3xl md:text-6xl text-white text-center">
           Visit My Best Work
         </h1>
-        <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7">
+        <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7 ">
           <Work
             name="GrapSchool"
             description="The goal of Grapschool, an IT training facility an IT training facility"
@@ -558,7 +559,6 @@ export default function Home() {
           ></Work>
         </div>
       </section>
-
       {/* resume */}
       <section className="my-32 container" id="resume">
         <h4 className=" uppercase text-secondary text-center text-[12px] font-semibold">
@@ -626,7 +626,6 @@ export default function Home() {
           </div>
         </section>
       </section>
-
       {/* testimonial */}
       <section className="my-32 container">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
@@ -636,7 +635,7 @@ export default function Home() {
           What Clients Say
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12 ">
           <Testimonial
             name="MD. Sabbir Hossain"
             designation="E-learning Consultant at Commonwealth of Learning"
@@ -679,7 +678,6 @@ export default function Home() {
           ></Testimonial>
         </div>
       </section>
-
       {/* contact us */}
       <section className="my-32 container" id="contact-us">
         <h4 className=" uppercase text-secondary text-[12px] font-semibold text-center">
@@ -745,7 +743,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* footer us */}
       <section className=" ">
         <footer className="footer footer-center p-10 bg-primary  text-base-content rounded">

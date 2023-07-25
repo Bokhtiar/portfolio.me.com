@@ -1,11 +1,16 @@
+
+
 import Image from "next/image";
 import { VscQuote } from "react-icons/vsc";
 import { ITestimonial } from "@/types/testimonial.type";
+
+
 export const Testimonial: React.FC<ITestimonial> = (
   props: ITestimonial
 ): JSX.Element => {
+
   return (
-    <div className="border rounded border-gray-800 text-white bg-primary px-8 py-4 my-[0px]">
+    <div className="border rounded border-gray-800 text-white bg-primary px-8 py-4 my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90">
       {/* rating with coma */}
       <div className="flex items-center gap-4">
         <Image
@@ -15,7 +20,7 @@ export const Testimonial: React.FC<ITestimonial> = (
           alt="Picture of the author"
           className="rounded-full"
         />
-        <div>
+        <div className="">
           <span className=" text-white lg:text-base font-semibold">
             {props.name}
           </span>

@@ -3,7 +3,7 @@ import { IWork } from "../../types/work.type";
 export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
   return (
     <div>
-      <div className="  border rounded border-gray-800 text-white bg-primary px-8 py-8  my-[0px]">
+      <div className="  border rounded border-gray-800 text-white bg-primary px-8 py-8  my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90 ">
         <Image
           src={props.image}
           width={350}
@@ -14,7 +14,7 @@ export const Work: React.FC<IWork> = (props: IWork): JSX.Element => {
         <div className="flex items-center justify-between my-3 ">
           <a
             href={props.website_link}
-            className="text-gray-400 text-[13px]"
+            className="text-gray-400 text-[13px]  hover:text-secondary"
             target="blank"
           >
             Website link
