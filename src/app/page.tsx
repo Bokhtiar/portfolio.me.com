@@ -124,22 +124,22 @@ export default function Home() {
               <div className="flex items-center gap-3 ">
                 {/* facebook */}
                 <a
-                  className="bg-white rounded"
+                  className="bg-white  rounded-full"
                   href="https://www.facebook.com/bokhtiar172/"
                   target="blank"
                 >
                   <Image
-                    src="/images/icon/fb.png"
+                    src="/images/icon/fb.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className=" "
+                    className=" border border-secondary rounded-full p-[2px]"
                   />
                 </a>
 
                 {/* insta */}
                 <a
-                  className="bg-white rounded "
+                  className="bg-white rounded-full "
                   href="https://www.instagram.com/bokhtiar_tushar/"
                   target="blank"
                 >
@@ -148,7 +148,7 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className=""
+                    className="border border-secondary rounded-full p-[2px]"
                   />
                 </a>
 
@@ -165,7 +165,7 @@ export default function Home() {
 
                 {/* github */}
                 <a
-                  className="bg-white rounded"
+                  className="bg-white rounded-full"
                   href="https://github.com/Bokhtiar"
                   target="blank"
                 >
@@ -174,13 +174,13 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className=""
+                    className="border border-secondary rounded-full p-[2px]"
                   />
                 </a>
 
                 {/* facebook */}
                 <a
-                  className=" bg-white rounded"
+                  className=" bg-white rounded-full"
                   href="https://www.linkedin.com/in/bokhtiarswe/"
                   target="blank"
                 >
@@ -189,7 +189,7 @@ export default function Home() {
                     width={30}
                     height={30}
                     alt="Picture of the author"
-                    className=""
+                    className="border border-secondary rounded-full p-[2px]"
                   />
                 </a>
               </div>
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* what i do */}
-      <section className="my-32 container">
+      <section className="my-32 container" id="service">
         <h4 className=" uppercase text-secondary text-[12px] text-center font-semibold">
           My services
         </h4>
@@ -760,57 +760,72 @@ export default function Home() {
 
           <div className="grid grid-flow-col gap-4 mt-[-20px]">
             {/* facebook */}
-            <a className="bg-white rounded" href="">
+            <a
+              className="bg-white rounded-full"
+              href="https://www.facebook.com/bokhtiar172/" target="blank"
+            >
               <Image
-                src="/images/icon/fb.png"
+                src="/images/icon/fb.webp"
                 width={30}
                 height={30}
                 alt="Picture of the author"
-                className="rounded-full "
+                className="border border-secondary rounded-full p-[2px] "
               />
             </a>
 
             {/* facebook */}
-            <a className="bg-white rounded" href="">
+            <a
+              className="bg-white rounded-full"
+              href="https://www.instagram.com/bokhtiar_tushar/"
+              target="blank"
+            >
               <Image
                 src="/images/icon/insta.png"
                 width={30}
                 height={30}
                 alt="Picture of the author"
-                className="rounded-full"
+                className=" border border-secondary rounded-full p-[2px]"
               />
             </a>
 
             {/* facebook */}
-            <a className="bg-white rounded" href="">
+            <a className="bg-white rounded-full" href="">
               <Image
                 src="/images/icon/twitter.png"
                 width={30}
                 height={30}
                 alt="Picture of the author"
-                className="rounded-full"
+                className=" border border-secondary rounded-full p-[2px]"
               />
             </a>
 
             {/* facebook */}
-            <a className="bg-white rounded" href="">
+            <a
+              className="bg-white rounded-full"
+              href="https://github.com/Bokhtiar"
+              target="blank"
+            >
               <Image
                 src="/images/icon/github.png"
                 width={30}
                 height={30}
                 alt="Picture of the author"
-                className="rounded-full"
+                className="border border-secondary rounded-full p-[2px]"
               />
             </a>
 
             {/* facebook */}
-            <a className="bg-white rounded" href="">
+            <a
+              className="bg-white rounded-full"
+              href="https://www.linkedin.com/in/bokhtiarswe/"
+              target="blank"
+            >
               <Image
                 src="/images/icon/linkdin.png"
                 width={30}
                 height={30}
                 alt="Picture of the author"
-                className="rounded-full"
+                className="border border-secondary rounded-full p-[2px]"
               />
             </a>
           </div>
