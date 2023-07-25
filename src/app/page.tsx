@@ -652,7 +652,7 @@ export default function Home() {
           <Testimonial
             name="MD. Saidur Rahman"
             designation="Android Developer at Creatrix Soft Ltd"
-            image="/images/c3.jpg"
+            image="/images/saidur_bhai.png"
             description="He has completed numerous assignments for me and never failed to meet expectations. exceptionally serene and able to communicate "
           ></Testimonial>
 
