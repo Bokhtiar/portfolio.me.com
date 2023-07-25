@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <section className="bg-primary" id="home">
       {/* navbar */}
-      <div className="navbar bg-primary container text-white py-4">
+      <div className="navbar bg-primary container text-white py-4 sticky top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -226,8 +226,8 @@ export default function Home() {
           {/* right side content */}
           <div className="md:col-span-1">
             <Image
-              src="/images/bokhtiar2.png"
-              width={450}
+              src="/images/bokhtiartoshar.png"
+              width={650}
               height={250}
               alt="Picture of the author"
               className=" rounded-xl mx-auto"
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* what i do */}
-      <section className="my-32 container" id="service">
+      <section className="my-32 container">
         <h4 className=" uppercase text-secondary text-[12px] text-center font-semibold">
           My services
         </h4>
@@ -640,41 +640,41 @@ export default function Home() {
             name="MD. Sabbir Hossain"
             designation="E-learning Consultant at Commonwealth of Learning"
             image="/images/c1.jpeg"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+            description="A real asset to any company, A superb full-stack web developer with a keen interest in technology "
           ></Testimonial>
           <Testimonial
             name="Hasan Talukder"
             designation="Ceo of grapGroup"
             image="/images/c2.jpg"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+            description="With Bokhtiar Toshar, I had a pleasant experience, I think highly of his abilities as a software engineer "
           ></Testimonial>
 
           <Testimonial
             name="MD. Saidur Rahman"
             designation="Android Developer at Creatrix Soft Ltd"
             image="/images/c3.jpg"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
-          ></Testimonial>
-
-          <Testimonial
-            name="Arjun Kumar"
-            designation="professional designer"
-            image="/images/c4.png"
-            description="Bokhtiar provides excellent service. They produce excellent work and are prompt in their responses to questions and problems. We look forward to working again in the future, "
-          ></Testimonial>
-
-          <Testimonial
-            name="mark cavin"
-            designation="Ceo of Pencil Design studio"
-            image="/images/c5.png"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+            description="He has completed numerous assignments for me and never failed to meet expectations. exceptionally serene and able to communicate "
           ></Testimonial>
 
           <Testimonial
             name="Nazmul Islam Koushik"
             designation="Ceo of Pencil Design studio"
             image="/images/c5.jpg"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+            description="Excellent work, enjoyed their communication and behavior, excellent work, and a highly skilled laravel developer "
+          ></Testimonial>
+
+          <Testimonial
+            name="Arjun Kumar"
+            designation="professional designer"
+            image="/images/c4.png"
+            description="Working with Bokhtiar Toshar is really helpful and considerate. We look forward to working with him once more and strongly endorse his work "
+          ></Testimonial>
+
+          <Testimonial
+            name="MD. Salauddin"
+            designation="Ceo of Pencil Design studio"
+            image="/images/c5.png"
+            description="Excellent communication and help to work on our website development "
           ></Testimonial>
         </div>
       </section>
