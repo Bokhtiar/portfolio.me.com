@@ -144,7 +144,7 @@ export default function Home() {
                   target="blank"
                 >
                   <Image
-                    src="/images/icon/insta.png"
+                    src="/images/icon/insta.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
@@ -170,7 +170,7 @@ export default function Home() {
                   target="blank"
                 >
                   <Image
-                    src="/images/icon/github.png"
+                    src="/images/icon/github.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
@@ -185,7 +185,7 @@ export default function Home() {
                   target="blank"
                 >
                   <Image
-                    src="/images/icon/linkdin.png"
+                    src="/images/icon/linkdin.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
@@ -226,8 +226,8 @@ export default function Home() {
           {/* right side content */}
           <div className="md:col-span-1">
             <Image
-              src="/images/bokhtiartoshar.png"
-              width={650}
+              src="/images/bokhtiar2.png"
+              width={450}
               height={250}
               alt="Picture of the author"
               className=" rounded-xl mx-auto"
@@ -762,7 +762,8 @@ export default function Home() {
             {/* facebook */}
             <a
               className="bg-white rounded-full"
-              href="https://www.facebook.com/bokhtiar172/" target="blank"
+              href="https://www.facebook.com/bokhtiar172/"
+              target="blank"
             >
               <Image
                 src="/images/icon/fb.webp"
@@ -780,7 +781,7 @@ export default function Home() {
               target="blank"
             >
               <Image
-                src="/images/icon/insta.png"
+                src="/images/icon/insta.webp"
                 width={30}
                 height={30}
                 alt="Picture of the author"
@@ -791,7 +792,7 @@ export default function Home() {
             {/* facebook */}
             <a className="bg-white rounded-full" href="">
               <Image
-                src="/images/icon/twitter.png"
+                src="/images/icon/twitter.webp"
                 width={30}
                 height={30}
                 alt="Picture of the author"
@@ -806,7 +807,7 @@ export default function Home() {
               target="blank"
             >
               <Image
-                src="/images/icon/github.png"
+                src="/images/icon/github.webp"
                 width={30}
                 height={30}
                 alt="Picture of the author"
@@ -821,7 +822,7 @@ export default function Home() {
               target="blank"
             >
               <Image
-                src="/images/icon/linkdin.png"
+                src="/images/icon/linkdin.webp"
                 width={30}
                 height={30}
                 alt="Picture of the author"
