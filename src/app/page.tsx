@@ -97,6 +97,16 @@ export default function Home() {
       {/* banner area */}
       <section className="my-32 container">
         <div className="grid grid-cols-1 md:grid-cols-2 text-white">
+          <div className="md:col-span-1">
+            <Image
+              src="/images/bokhtiar2.png"
+              width={450}
+              height={250}
+              alt="Picture of the author"
+              className=" rounded-xl mx-auto"
+            />
+          </div>
+          
           {/* left side content */}
           <div className="md:col-span-1">
             <h2>
@@ -224,15 +234,6 @@ export default function Home() {
             </div>
           </div>
           {/* right side content */}
-          <div className="md:col-span-1">
-            <Image
-              src="/images/bokhtiar2.png"
-              width={450}
-              height={250}
-              alt="Picture of the author"
-              className=" rounded-xl mx-auto"
-            />
-          </div>
         </div>
       </section>
 
