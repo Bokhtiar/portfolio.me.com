@@ -606,25 +606,25 @@ export default function Home() {
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12 pl-2">
               <Resume
                 name_of_institute="SSL Wireless"
-                title="Software Specialist"
+                title="Software Specialist at SSL Wireless."
                 year="Aug 2023 - Present"
                 skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX · Nest.js"
               ></Resume>
               <Resume
                 name_of_institute="GrapView"
-                title="GrapView at Software Engineer"
+                title="Software Engineer at GrapView."
                 year="Oct 2022 - Aug 2023"
                 skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"
               ></Resume>
               <Resume
                 name_of_institute="Freshosoft"
-                title="Freshosoft at Junior Software Engineer"
+                title="Junior Software Engineer at Freshosoft."
                 year="Dec 2021 - Oct 2022 "
                 skill="Css · MySQL · HTML · JavaScript · Bootstrap · Laravel · AJAX · Reactjs · Nextjs ·  Vue.js"
               ></Resume>
               <Resume
                 name_of_institute="Antooba Technologies Ltd"
-                title="Antooba Technologies Ltd at Junior Software Engineer"
+                title="Junior Software Engineer at Antooba Technologies Ltd."
                 year="Jan 2021 - Nov 2021 "
                 skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"
               ></Resume>
