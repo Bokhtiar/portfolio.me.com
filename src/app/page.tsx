@@ -605,9 +605,15 @@ export default function Home() {
             </h3>
             <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 my-12 pl-2">
               <Resume
+                name_of_institute="SSL Wireless"
+                title="Software Specialist"
+                year="Aug 2023 - Present"
+                skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX · Nest.js"
+              ></Resume>
+              <Resume
                 name_of_institute="GrapView"
                 title="GrapView at Software Engineer"
-                year="Oct 2022 - Present"
+                year="Oct 2022 - Aug 2023"
                 skill="MySQL · React.js · Node.js · Express.js · MongoDB · Redis · HTML · CSS · JavaScript · Next.js · Tailwind CSS · TypeScript · RabbitMQ · Bootstrap · Laravel · AJAX"
               ></Resume>
               <Resume
