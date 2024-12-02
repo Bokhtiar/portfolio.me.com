@@ -1,4 +1,5 @@
 
+"use client";
 import Image from "next/image";
 import { Card } from "@/components/card";
 import { Do } from "@/components/do/index";
@@ -6,10 +7,22 @@ import { Resume } from "@/components/resume";
 import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
+import { useState } from "react";
 
 export default function Home() {
 
 
+
+  const [activeSection, setActiveSection] = useState("#home");
+
+  const menuItems = [
+    { href: "#home", label: "HOME" },
+    { href: "#service", label: "SERVICES" },
+    { href: "#skill", label: "SKILL" },
+    { href: "#project", label: "PROJECT" },
+    { href: "#resume", label: "RESUME" },
+    { href: "#contact-us", label: "CONTACT" },
+  ];
 
 
   return (
@@ -19,26 +32,29 @@ export default function Home() {
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+
+              <a href="#home" className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </a>
             </label>
             <ul
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary text-white rounded-box w-52"
             >
-              <li>
+              {/* <li>
                 <a href="#home" className="">
                   HOME
                 </a>
@@ -57,10 +73,25 @@ export default function Home() {
               </li>
               <li>
                 <a href="#contact-us">CONTACT</a>
+              </li> */}
+                {menuItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  onClick={() => setActiveSection(item.href)}
+                  className={`${activeSection === item.href
+                      ? "bg-secondary p-1 px-7 py-2 rounded-md"
+                      : "bh-primary "
+                    }`}
+                >
+                  {item.label}
+                </a>
               </li>
+            ))}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          <a href="#home" className="btn btn-ghost normal-case text-xl">
+
             <Image
               src="/images/me.png"
               width={100}
@@ -72,8 +103,8 @@ export default function Home() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-sm">
-            <li>
-              <a href="#home" className="">
+            {/* <li>
+              <a href="#home" className="bg-secondary p-1 px-7 py-2 rounded-full text-sm">
                 HOME
               </a>
             </li>
@@ -91,7 +122,21 @@ export default function Home() {
             </li>
             <li>
               <a href="#contact-us">CONTACT</a>
-            </li>
+            </li> */}
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  onClick={() => setActiveSection(item.href)}
+                  className={`${activeSection === item.href
+                      ? "bg-secondary p-1 px-7 py-2 rounded-md"
+                      : "bh-primary "
+                    }`}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="navbar-end">
@@ -102,7 +147,7 @@ export default function Home() {
       <section className="my-32 container">
         <div className="grid grid-cols-1 md:grid-cols-2 text-white">
           {/* left side content */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 my-auto">
             <h2>
               <span className="text-xl md:text-3xl font-semibold">Hello, </span>{" "}
               <span className="text-secondary text-xl md:text-3xl font-semibold">
@@ -229,12 +274,17 @@ export default function Home() {
           </div>
           {/* right side content */}
           <div className="md:col-span-1">
-            <Image
-              src="/images/bokhtiar2.1.png"
-              width={450}
-              height={250}
+            {/* <Image
+              src="/images/bokhtiar2.4.png"
+              width={0}
+              height={0}
               alt="Picture of the author"
-              className=" rounded-xl mx-auto"
+              className=" rounded-xl mx-auto h-72 w-72"
+            /> */}
+            <img
+              src="/images/bokhtiar2.8.png"
+              className="rounded-xl mx-auto object-cover"
+              alt="Picture of the author"
             />
           </div>
         </div>
