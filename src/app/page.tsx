@@ -570,21 +570,51 @@ export default function Home() {
             />
           </div>
 
-          <SkillIconTile icon={SiLinux} label="VPS / Linux server" />
-          <SkillIconTile icon={SiVercel} label="Vercel" />
-          <SkillIconTile icon={SiAmazons3} label="AWS S3" />
-          <SkillIconTile icon={SiApollographql} label="Apollo GraphQL" />
-          <SkillIconTile icon={SiDocker} label="Docker" />
-          <SkillIconTile icon={SiPm2} label="PM2" />
-          <SkillIconTile icon={SiGit} label="Git" />
-          <SkillIconTile icon={SiRedis} label="Redis" />
-          <SkillIconTile icon={SiRabbitmq} label="RabbitMQ" />
-          <SkillIconTile icon={SiTailwindcss} label="Tailwind CSS" />
-          <SkillIconTile icon={SiMongodb} label="MongoDB" />
-          <SkillIconTile icon={SiLaravel} label="Laravel" />
-          <SkillIconTile icon={SiNestjs} label="NestJS" />
-          <SkillIconTile icon={SiDjango} label="Django" />
-          <SkillIconTile icon={SiPostman} label="Postman" />
+          <SkillIconTile label="VPS / Linux server">
+            <SiLinux className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Vercel">
+            <SiVercel className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="AWS S3">
+            <SiAmazons3 className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Apollo GraphQL">
+            <SiApollographql className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Docker">
+            <SiDocker className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="PM2">
+            <SiPm2 className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Git">
+            <SiGit className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Redis">
+            <SiRedis className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="RabbitMQ">
+            <SiRabbitmq className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Tailwind CSS">
+            <SiTailwindcss className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="MongoDB">
+            <SiMongodb className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Laravel">
+            <SiLaravel className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="NestJS">
+            <SiNestjs className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Django">
+            <SiDjango className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
+          <SkillIconTile label="Postman">
+            <SiPostman className="h-[60px] w-[60px] text-white" aria-hidden />
+          </SkillIconTile>
         </div>
       </section>
       {/* work */}
