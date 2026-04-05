@@ -7,6 +7,7 @@ import { Resume } from "@/components/resume";
 import { Work } from "@/components/work/index";
 import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
+import { ContactForm } from "@/components/contact-form";
 import { useState } from "react";
 
 export default function Home() {
@@ -678,6 +679,14 @@ export default function Home() {
                 year="Jan 2021 - Nov 2021 "
                 skill="Css · MySQL · HTML · Bootstrap · Laravel · AJAX"
               ></Resume>
+
+<Resume
+                name_of_institute="Job Media Ltd, Zanvisionlabs, Baajar.net"
+                title="Team Lead (Consultant) — Part-time"
+                year="Jan 24 - Present"
+                skill="Led development team and managed multiple projects &
+Coordinated with clients and ensured timely delivery"
+              ></Resume>
             </ol>
           </div>
         </section>
@@ -698,12 +707,29 @@ export default function Home() {
             image="/images/c1.jpeg"
             description="A real asset to any company, A superb full-stack web developer with a keen interest in technology "
           ></Testimonial>
+
+<Testimonial
+            name="Eleas"
+            designation="Ceo of Job Media Ltd"
+            image="/images/eleas_bhai.png"
+            description="Professional collaboration and clear communication throughout the project. Highly recommended for quality web development work."
+          ></Testimonial>
+
+<Testimonial
+            name="Sajon"
+            designation="Ceo of New tech & Baajar.net"
+            image="/images/sajon_bhai.png"
+            description="Reliable, skilled, and easy to work with. Delivered on time with excellent attention to detail."
+          ></Testimonial>
+
           <Testimonial
             name="Hasan Talukder"
             designation="Ceo of grapGroup"
             image="/images/c2.jpg"
             description="With Bokhtiar Toshar, I had a pleasant experience, I think highly of his abilities as a software engineer "
           ></Testimonial>
+
+
 
           <Testimonial
             name="MD. Saidur Rahman"
@@ -732,6 +758,9 @@ export default function Home() {
             image="/images/c5.png"
             description="Excellent communication and help to work on our website development "
           ></Testimonial>
+
+          
+        
         </div>
       </section>
       {/* contact us */}
@@ -753,48 +782,8 @@ export default function Home() {
               <Card info="Freelancers Available" index="4"></Card>
             </div>
             {/* contact form */}
-            <div className="col-span-3 border rounded border-gray-800 md:h-[592px] ">
-              <form action="" className="mx-8 md:mx-32 my-24">
-                <div className="grid grid-cols-1 md:grid-cols-2   gap-12">
-                  <input
-                    type="text"
-                    className="input input-bordered md:w-full  bg-primary border rounded border-gray-800  text-secondary"
-                    placeholder="Enter Your Name"
-                    name=""
-                    id=""
-                  />
-                  <input
-                    type="text"
-                    className="input input-bordered w-full bg-primary border rounded border-gray-800 text-secondary  "
-                    placeholder="Enter Your Phone"
-                    name=""
-                    id=""
-                  />
-                  <input
-                    type="text"
-                    className="input input-bordered w-full bg-primary border rounded border-gray-800  text-secondary"
-                    placeholder="Enter Your Email"
-                    name=""
-                    id=""
-                  />
-                  <input
-                    type="text"
-                    className="input input-bordered w-full bg-primary border rounded border-gray-800  text-secondary"
-                    placeholder="Enter Your Subject"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <textarea
-                  className="bg-primary w-full input-bordered border rounded border-gray-800 mt-12  text-secondary"
-                  rows={8}
-                  cols={40}
-                />
-
-                <div className="text-center text-white mt-8">
-                  <PrimaryButton name="Submit"></PrimaryButton>
-                </div>
-              </form>
+            <div className="col-span-3 border rounded border-gray-800 md:min-h-[592px] ">
+              <ContactForm />
             </div>
           </div>
         </div>
