@@ -9,6 +9,25 @@ import { Testimonial } from "@/components/testimonial";
 import { PrimaryButton } from "@/components/button/index";
 import { ContactForm } from "@/components/contact-form";
 import { useState } from "react";
+import { FaServer } from "react-icons/fa";
+import {
+  SiAmazons3,
+  SiApollographql,
+  SiDjango,
+  SiDocker,
+  SiGit,
+  SiLaravel,
+  SiLinux,
+  SiMongodb,
+  SiNestjs,
+  SiPm2,
+  SiPostman,
+  SiRabbitmq,
+  SiRedis,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
+import { SkillIconTile } from "@/components/skill-icon-tile";
 
 export default function Home() {
 
@@ -299,7 +318,7 @@ export default function Home() {
           What I Do
         </h1>
         {/* services list */}
-        <div className=" grid grid-cols-1 md:grid-cols-3 my-12 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-12 gap-8">
           <div className=" border border-gray-800  text-white bg-primary px-3 md:px-8 md:py-4  rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90 ">
             <Do
               logo="/images/web.png"
@@ -310,9 +329,9 @@ export default function Home() {
 
           <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90">
             <Do
-              logo="/images/icon/github.png"
+              logo="/images/icon/github.webp"
               title="Web Development"
-              description="Make trustworthy internet designs that zealously satisfy the requirements of both your business and your customers."
+              description="Make trustworthy web applications and APIs — from UI to production, including server deployment when you go live."
             ></Do>
           </div>
 
@@ -321,6 +340,14 @@ export default function Home() {
               logo="/images/api.png"
               title="API Development"
               description="Through application programming interfaces, two or more computer applications can communicate.  "
+            ></Do>
+          </div>
+
+          <div className=" border border-gray-800  text-white bg-primary px-8 py-4 rounded-md my-[0px] hover:scale-90 ease-out duration-500 hover:opacity-90">
+            <Do
+              icon={<FaServer className="h-5 w-5" aria-hidden />}
+              title="Server Deployment"
+              description="Deploy and run apps on VPS, cloud, or containers — SSL, reverse proxy, process managers, CI/CD, and uptime-focused setup."
             ></Do>
           </div>
         </div>
@@ -542,6 +569,22 @@ export default function Home() {
               className="mx-auto py-5 rounded"
             />
           </div>
+
+          <SkillIconTile icon={SiLinux} label="VPS / Linux server" />
+          <SkillIconTile icon={SiVercel} label="Vercel" />
+          <SkillIconTile icon={SiAmazons3} label="AWS S3" />
+          <SkillIconTile icon={SiApollographql} label="Apollo GraphQL" />
+          <SkillIconTile icon={SiDocker} label="Docker" />
+          <SkillIconTile icon={SiPm2} label="PM2" />
+          <SkillIconTile icon={SiGit} label="Git" />
+          <SkillIconTile icon={SiRedis} label="Redis" />
+          <SkillIconTile icon={SiRabbitmq} label="RabbitMQ" />
+          <SkillIconTile icon={SiTailwindcss} label="Tailwind CSS" />
+          <SkillIconTile icon={SiMongodb} label="MongoDB" />
+          <SkillIconTile icon={SiLaravel} label="Laravel" />
+          <SkillIconTile icon={SiNestjs} label="NestJS" />
+          <SkillIconTile icon={SiDjango} label="Django" />
+          <SkillIconTile icon={SiPostman} label="Postman" />
         </div>
       </section>
       {/* work */}
@@ -554,45 +597,82 @@ export default function Home() {
         </h1>
         <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-7 ">
           <Work
-            name="GrapSchool"
-            description="The goal of Grapschool, an IT training facility an IT training facility"
-            website_link="https://grapschool.com/"
-            image="/images/grapschoo.png"
-            category="Education"
+            name="Jobmedia"
+            description="Job Media is a job portal website."
+            website_link="#"
+            image="/images/projects/jobmedia.png"
+            category="Career"
           ></Work>
-
           <Work
-            name="GrapTown"
-            description="Graptown Boys Hostel is a student hostel, Operated by GrapGroup"
-            website_link="https://graptown.com/"
-            image="/images/graptwon.png"
+            name="Billing system"
+            description="Make a bill in PDF format and print."
+            website_link="#"
+            image="/images/projects/ijc_management.png"
             category="Business"
           ></Work>
-
           <Work
-            name="Asazaoa"
-            description="One Platform for All Transport Services One app,all services at your fingertips."
-            website_link="https://asazaoa.com/"
-            image="/images/asajawa.png"
-            category="Transport"
+            name="Visaxpert"
+            description="Indian visa apply application."
+            website_link="#"
+            image="/images/projects/visaexpert.png"
+            category="Travel"
           ></Work>
-
+          <Work
+            name="CRM"
+            description="Built a CRM system to organize customer information, track interactions, and streamline sales."
+            website_link="#"
+            image="/images/api.png"
+            category="Business"
+          ></Work>
+          <Work
+            name="Multi-vendor eCommerce"
+            description="Built a multi-vendor eCommerce system for multiple sellers and unified storefront management."
+            website_link="#"
+            image="/images/projects/multi-vendor.png"
+            category="Ecommerce"
+          ></Work>
           <Work
             name="Restura"
-            description="Make Healthy Life With Fitbitesmeal. Delicious meal the way you want"
+            description="Make Healthy Life connect to us"
             website_link="https://restura-com.vercel.app/"
             image="/images/restura.png"
             category="Business"
           ></Work>
-
           <Work
-            name="Bt-ecommerce"
-            description="E-commerce is the buying and selling of goods and services over the internet."
+            name="GrapTown"
+            description="System for managing halls"
+            website_link="https://graptown.com/"
+            image="/images/graptwon.png"
+            category="Business"
+          ></Work>
+          <Work
+            name="Ecommerce"
+            description="Buying and selling of services over the internet."
             website_link="https://bokhtiar.github.io/bt-ecommerce.com/"
-            image="/images/bt-original.png"
+            image="/images/projects/bt-original.png"
             category="Ecommerce"
           ></Work>
-
+          <Work
+            name="Artifly"
+            description="The online purchase and sale of services."
+            website_link="#"
+            image="/images/web.png"
+            category="Ecommerce"
+          ></Work>
+          <Work
+            name="Grapschool"
+            description="IT training facility an IT training facility"
+            website_link="https://grapschool.com/"
+            image="/images/grapschoo.png"
+            category="Education"
+          ></Work>
+          <Work
+            name="Asazaoa"
+            description="One Platform for All Transport Services — one app, all services at your fingertips."
+            website_link="https://asazaoa.com/"
+            image="/images/projects/asajawa.png"
+            category="Transport"
+          ></Work>
           <Work
             name="vert-2-gris"
             description="Vert-2-Gris is a humane venture, where, as the founders, East meets West, Bangladesh meets Europe."
@@ -600,12 +680,39 @@ export default function Home() {
             image="/images/ver2.png"
             category="Ecommerce"
           ></Work>
-
           <Work
-            name="Schoolpara"
-            description="Stress Free Studying !! anywhere any time."
-            website_link="https://schoolpara.com/"
-            image="/images/schoolpara.png"
+            name="Office Management system"
+            description="Developed an Office Management System for teams and daily operations."
+            website_link="#"
+            image="/images/projects/ijc_management.png"
+            category="Business"
+          ></Work>
+          <Work
+            name="Exam preparation any admission"
+            description="Developed an admission exam preparation platform for students."
+            website_link="#"
+            image="/images/projects/schoolpara.png"
+            category="Education"
+          ></Work>
+          <Work
+            name="News portal"
+            description="Developed a news portal for publishing and managing articles."
+            website_link="#"
+            image="/images/web.png"
+            category="Media"
+          ></Work>
+          <Work
+            name="Point of Sale"
+            description="Developed a Point of Sale (POS) system to manage sales, inventory, and checkout."
+            website_link="#"
+            image="/images/pos.jpeg"
+            category="Business"
+          ></Work>
+          <Work
+            name="School Management system"
+            description="Developed a School Management System for administration, classes, and records."
+            website_link="#"
+            image="/images/projects/school.png"
             category="Education"
           ></Work>
         </div>
